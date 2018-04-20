@@ -1,0 +1,31 @@
+{
+  "Globvars": {
+      "copyr": "2017 © DoubleClick & Admixer. All Rights Reserved"
+  },
+  "Pages": {
+    "home": {
+      "title": "DoubleClick",
+      "description": "описание",
+      "keywords": "ключевые слова",
+      "bodyClass": "page-home"
+    },
+    "doubadm": {
+      "title": "DoubleClick & Admixer",
+      "description": "описание DoubleClick & Admixer",
+      "keywords": "ключевые слова DoubleClick & Admixer",
+      "bodyClass": "page-doubadm"
+    },
+    "doubst": {
+      "title": "DoubleClick Продукты",
+      "description": "описание DoubleClick Продукты",
+      "keywords": "ключевые слова DoubleClick Продукты",
+      "bodyClass": "page-doubst"
+    },
+    "cont": {
+      "title": "Связаться с нами",
+      "description": "описание DoubleClick & Admixer",
+      "keywords": "ключевые слова DoubleClick & Admixer",
+      "bodyClass": "page-cont"
+    }
+  }
+}

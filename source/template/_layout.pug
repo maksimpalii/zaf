@@ -1,0 +1,50 @@
+block variables
+include ./common/_mixins
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title Medoff
+        meta(name= "description" content='desc')
+        meta(name= "keywords" content='key')
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        link(rel='icon', type='image/x-icon', href='/assets/img/favicon.ico')
+        link(rel='stylesheet' href='/assets/css/foundation.css')
+        link(rel='stylesheet' href='/assets/css/app.css')
+        link(rel='stylesheet' href='/assets/img/sprite/sprite-png.css')
+        link(href='https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif:400i&subset=cyrillic', rel='stylesheet')
+
+        script(src='/assets/js/foundation.js')
+
+
+        <!--[if lt IE 9]>
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+
+        <![endif]-->
+
+
+body(class='home')
+    .preloader
+        .preloader__spinner
+            svg.night-animation(width='120', height='120', viewbox='0 0 120 120', preserveaspectratio='xMaxYMax meet')
+                g.group
+                    circle.small.circle(r='35', cx='50%', cy='50%', fill='none', stroke-dasharray='1 220', stroke-linecap='round')
+                    circle.big.circle(r='25', cx='50%', cy='50%', fill='none', stroke-dasharray='0 157')
+                    text.loading-value(x='50%', y='50%', fill='#000') 0%
+
+    block content
+    script(src='/assets/js/createjs-2015.11.26.min.js')
+    script(src='/assets/js/race_all_v2.js')
+    script(src='https://cdn.jsdelivr.net/kute.js/1.5.5/kute.min.js')
+    script(src='https://cdn.jsdelivr.net/kute.js/1.5.5/kute-svg.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js')
+    script(src='/assets/js/forparallaxanimate.js')
+    script(src='/assets/js/jquery.min.js')
+    script(src='/assets/js/jquery.velocity.min.js')
+    script(src='/assets/js/velocity.ui.min.js')
+    script(src='/assets/js/wheel-indicator.js')
+
+    //script(src='/assets/js/app.js' defer)
+    script(src='/assets/js/app.js')

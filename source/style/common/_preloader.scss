@@ -1,0 +1,50 @@
+.preloader {
+  background-color: #000121;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.night-animation circle {
+  position: relative;
+  z-index: 5;
+  stroke: #ffffff;
+  stroke-width: 5;
+  transform-origin: 50%;
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+
+.preloader .loading-value {
+  dominant-baseline: central;
+  text-anchor: middle;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  fill: #ffffff;
+  transition: 0.5s;
+}
+
+.preloader .small {
+  stroke-width: 10;
+  animation: moving-circle 3s;
+}
+
+
+.preloader .circle {
+  animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes moving-circle {
+  100% {
+    transform: rotate(630deg);
+  }
+}
