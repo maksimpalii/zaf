@@ -181,7 +181,7 @@ var sec6_inn = (function () {
 var sec5_hf1_from_sec6 = (function () {
     return {
         inn: function (raceCall) {
-            if (raceCall === 'linesec5_all_out_in-end' && direction === 'up') {
+            if (raceCall === 'linesec5_all_out_in-end' && direction === 'up' && prevSlide === 'sec5-r1') {
                 $('#sec5_half').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeInSine', complete: function () {
                         console.log('sec5_hf1_from_sec6-end');
@@ -240,7 +240,7 @@ var sec5_hf1_to_sec5 = (function () {
     return {
         inn: function (raceCall) {
             if (raceCall === 'linesec5_trans_out-end' && direction === 'up') {
-                $('#sec5').velocity({opacity: 1}, {
+                $('#sec5_txt').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeIn', complete: function () {
                         console.log('sec5_hf1_to_sec5-end');
                         indexSlide = 'sec5';
@@ -255,6 +255,9 @@ var sec5_hf1_to_sec5 = (function () {
             $('#sec5_half').velocity({opacity: 0}, {
                 duration: 1000, easing: 'easeInSine', complete: function () {
                     canvasTimeline.linesec5.gotoAndPlay('linesec5_trans_out');
+                    $('#dirapack').velocity({bottom: '10%'}, { duration: 1000, easing: 'easeInSine' });
+                    var twes06hs1_ = TweenMax.to($('#packpill_in'), 0.7, {"transform": "rotateZ(-8deg)", yoyo:false, repeat: 0, ease: Power2.easeIn});
+                    $('.back_osnova').velocity({right: '0%'}, {delay: 700, duration: 700, easing: 'easeIn'});
                 }
             });
         }
@@ -276,9 +279,13 @@ var sec5_to_sec5_hf1 = (function () {
             }
         },
         go: function () {
-            $('#sec5').velocity({opacity: 0}, {
+            $('#sec5_txt').velocity({opacity: 0}, {
                 duration: 1000, easing: 'easeInSine', complete: function () {
                     canvasTimeline.linesec5.gotoAndPlay('linesec5_trans_in');
+                    $('#dirapack').velocity({bottom: '25%'}, { duration: 1000, easing: 'easeInSine' });
+                    var twes06s1_ = TweenMax.to($('#packpill_in'), 0.7, {"transform": "rotateZ(0deg)", yoyo:false, repeat: 0, ease: Power2.easeIn});
+                    $('.back_osnova').velocity({right: '-25%'}, {delay: 700, duration: 700, easing: 'easeIn'});
+
                 }
             });
         }
@@ -290,15 +297,28 @@ var sec5_inn = (function () {
     return {
         inn: function (raceCall) {
             if (raceCall === 'linesec5_in-end') {
-                $('#sec5').velocity({opacity: 1}, {
-                    duration: 1000, easing: 'easeInSine', complete: function () {
-                        console.log('sec5_inn-end');
-                        indexSlide = 'sec5';
-                        nextSlide = 'sec5-r1';
-                        prevSlide = 'sec4-r2';
-                        Trigger_Anim = true;
-                    }
-                })
+                $('#sec5').velocity({opacity: 1}, { duration: 1000, easing: 'easeInSine'});
+                var twes05s1_ = TweenMax.to($('.ovsst0'), 0.7, {"transform": "scale(1)", yoyo:false, repeat: 0, ease: Power2.easeIn});
+                var twes05s2_ = TweenMax.to($('.ovsst2'), 0.7, {"transform": "scale(1)", yoyo:false, delay:0.3, repeat: 0, ease: Power2.easeIn});
+                var twes05s3_ = TweenMax.to($('.ovsst4'), 0.7, {"transform": "scale(1)", yoyo:false, delay:0.5, repeat: 0, ease: Power2.easeIn});
+                var twes05s4_ = TweenMax.to($('#packpill'), 0.7, {"transform": "scale(1)", yoyo:false, delay:0.7, repeat: 0, ease: Power2.easeIn});
+                var twes06_ = TweenMax.to($('#pilul'), 1, {"transform": "scale(1)","left": 0,"top": 0, yoyo:false, delay:1, repeat: 0, ease: Power2.easeIn});
+                var twes062_ = TweenMax.to($('#pilul2'), 1, {"transform": "scale(0.7)","right": 0,"bottom": 0, yoyo:false, delay:1, repeat: 0, ease: Power2.easeIn});
+                var twes07_ = TweenMax.to($('#goodic'), 0.5, {"transform": "scale(1)","right": "3%","top": 0, yoyo:false, delay:1, repeat: 0, ease: Power2.easeIn});
+
+
+                $('#ftext_5').velocity({opacity: 1, marginTop: -30}, {delay: 400, duration: 1000, easing: 'easeIn'});
+                $('#sec5_txt #ftext_op').velocity({opacity: 1}, {delay: 500, duration: 900, easing: 'easeIn'});
+                $('#button5').velocity({opacity: 1,  marginTop: 30}, {delay: 600, duration: 1000, easing: 'easeIn'});
+                $('#button5 #btn_text p').velocity({opacity: 1, marginTop: 0}, {delay: 700, duration: 1000, easing: 'easeIn'});
+                $('#button5 #btn_str').velocity({opacity: 1, right: '20%'}, {delay: 800, duration: 1000, easing: 'easeIn', complete: function () {
+                    console.log('sec5_inn-end');
+                    indexSlide = 'sec5';
+                    nextSlide = 'sec5-r1';
+                    prevSlide = 'sec4-r2';
+                    Trigger_Anim = true;
+                }});
+
             }
         },
         go: function () {
@@ -843,13 +863,7 @@ var sec2_inn = (function () {
             var dir012 = TweenMax.to($('#dir1_med'), .75, {"transform": "scale(1)", yoyo:false, delay:0.3, repeat: 0, ease: Power2.easeIn});
             var dir013 = TweenMax.to($('#dir1_small'), .75, {"transform": "scale(1)", yoyo:false, delay:0.4, repeat: 0, ease: Power2.easeIn});
             
-            
-            // var maskbig = KUTE.to('#mask_big_on', { path: '#mask_big_in' }, {duration: 1500, yoyo: false,easing:'easingQuarticOut', repeat: 0}).start();
-            // var itemmedium = KUTE.to('#item_medium_on', { path: '#item_medium_in' }, {duration: 900, delay:300, yoyo: false,easing:'easingQuarticOut', repeat: 0}).start();
-            // var itemsmall = KUTE.to('#item_small_on', { path: '#item_small_in' }, {duration: 750, delay:400, yoyo: false,easing:'easingQuarticOut', repeat: 0}).start();
-            //
-            // var man = document.getElementById("man");
-            // var twes0 = TweenMax.to(man, .5, {"transform": "scale(1)", yoyo:false, delay:0.6, repeat: 0, ease: Power2.easeIn});
+
 
             var ln1 = document.getElementById("LeftHand");
             var ln2 = document.getElementById("RightHand");
@@ -970,7 +984,7 @@ var sec1_inn = (function () {
             $('.fbutt').velocity({opacity: 1, marginTop: -30}, {delay: 400, duration: 1000, easing: 'easeIn'});
             $('#delimiter').velocity({height: '100%'}, {delay: 400, duration: 500, easing: 'easeIn'});
             $('#lang_ru').velocity({opacity: 1, right: 51}, {delay: 800, duration: 500, easing: 'easeIn'});
-            $('#lang_ukr').velocity({opacity: 1, right: 0}, {delay: 1000, duration: 500, easing: 'easeIn'});
+            $('#lang_ukr').velocity({opacity: 1, right: -5}, {delay: 1000, duration: 500, easing: 'easeIn'});
             $('#btn_text p').velocity({opacity: 1, marginTop: 0}, {delay: 500, duration: 1000, easing: 'easeIn'});
             $('#header_logo').velocity({opacity: 1, marginTop: 0}, {delay: 600, duration: 1000, easing: 'easeIn'});
             $('#btn_str').velocity({opacity: 1, right: '20%'}, {delay: 900, duration: 1000, easing: 'easeIn'});
@@ -1136,6 +1150,12 @@ var loadFonDone = function () {
     canvasTimeline.race.visible = false;
     canvasTimeline.race2.visible = false;
     canvasTimeline.plafirst.gotoAndPlay('first_in');
+
+    // sec5_inn.go();
+    // $('#section1').removeClass('active');
+    // $('#section5').addClass('active');
+
+
 };
 window.document.onkeydown = function (e) {
     if (!e) e = event;
