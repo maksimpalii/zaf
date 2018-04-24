@@ -230,6 +230,7 @@ body {
   top:0;    left: -2px;
   stroke-dasharray: 725;
   stroke-dashoffset: 599;
+  transition: all 0.3s ease-in-out;
 }
 #line_menu {
   position: absolute;

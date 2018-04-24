@@ -134,6 +134,7 @@ var sec7_to_sec6 = (function () {
             $('#sec7').velocity({opacity: 0}, {
                 duration: 1000, easing: 'easeInSine', complete: function () {
                     canvasTimeline.sec7.gotoAndPlay('sec7_out');
+
                 }
             });
         }
@@ -152,6 +153,7 @@ var sec6_to_sec7 = (function () {
             $('#sec6').velocity({opacity: 0}, {
                 duration: 1000, easing: 'easeInSine', complete: function () {
                     canvasTimeline.sec6.gotoAndPlay('good_out');
+                    nav_menu(7);
                 }
             });
         }
@@ -161,6 +163,7 @@ var sec6_inn = (function () {
     return {
         inn: function (raceCall) {
             if (raceCall === 'good_in-end') {
+
                 $('#sec6').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeInSine', complete: function () {
                         console.log('sec6_inn-end');
@@ -174,6 +177,7 @@ var sec6_inn = (function () {
         },
         go: function () {
             canvasTimeline.sec6.gotoAndPlay('good_in');
+            nav_menu(6);
         }
     }
 }());
@@ -203,6 +207,7 @@ var sec6_to_sec5_hf1 = (function () {
         inn: function (raceCall) {
             if (raceCall === 'good_out-end' && direction === 'up' && prevSlide === 'sec5-r1') {
                 sec5_hf1_from_sec6.go();
+                nav_menu(5);
             }
         },
         go: function () {
@@ -326,6 +331,7 @@ var sec5_inn = (function () {
         go: function () {
             canvasTimeline.race2.visible = false;
             canvasTimeline.linesec5.gotoAndPlay('linesec5_in');
+            nav_menu(5);
         }
     }
 }());
@@ -544,6 +550,7 @@ var sec4_hf1_inn = (function () {
         },
         go: function () {
             canvasTimeline.race2.racein2.parallax26.gotoAndPlay('road2_show');
+            nav_menu(4.5);
             $('#sec4_half').velocity({opacity: 1}, {
                 duration: 1000, easing: 'easeInSine', complete: function () {
 
@@ -587,6 +594,7 @@ var sec4_inn = (function () {
         },
         go: function () {
             canvasTimeline.kishpage.gotoAndPlay('pack_in');
+            nav_menu(4);
             $('#sec4').velocity({opacity: 1}, {
                 duration: 1000, easing: 'easeInSine', complete: function () {
 
@@ -640,6 +648,7 @@ var sec4_to_sec3 = (function () {
         inn: function (raceCall) {
             console.log(raceCall);
             if (raceCall === 'pack_out-end' && prevSlide === 'sec3' && direction === 'up') {
+
                 $('#sec3').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeInSine', complete: function () {
                         console.log('sec3_inn-end');
@@ -778,7 +787,7 @@ var sec2_to_sec3 = (function () {
                         $('#triang_45').velocity({opacity: 1}, {delay: 100, duration: 500, easing: 'easeIn'});
                         $('#icon_25_txt_inn').velocity({opacity: 1, translateX: 45}, {
                             delay: 500, duration: 1300, easing: 'easeIn', complete: function () {
-                                nav_menu(3);
+
                                 console.log('sec3_inn-end');
                                 indexSlide = 'sec3';
                                 nextSlide = 'sec4';
@@ -810,6 +819,7 @@ var sec2_to_sec3 = (function () {
                     $('#section2').removeClass('active');
                     $('#section3').addClass('active');
                     canvasTimeline.race.gotoAndPlay('road_trans_in');
+                    nav_menu(3);
                 }
             });
         }
@@ -865,7 +875,7 @@ var sec2_inn = (function () {
     return {
         inn: function (raceCall) {
             if (raceCall === 'road_show-end' && nextSlide === 'sec2') {
-                nav_menu(2);
+
                 console.log('sec2_inn-end');
                 indexSlide = 'sec2';
                 nextSlide = 'sec3';
@@ -874,6 +884,7 @@ var sec2_inn = (function () {
             }
         },
         go: function () {
+
             canvasTimeline.plafirst.visible = false;
             canvasTimeline.race.visible = true;
             canvasTimeline.race.racein.parallax26.gotoAndPlay('road_show');
@@ -962,6 +973,7 @@ var sec1_to_sec2 = (function () {
                     $('#section1').removeClass('active');
                     $('#section2').addClass('active');
                     canvasTimeline.plafirst.gotoAndPlay('first_all_out');
+                    nav_menu(2);
                 }
             });
         }
@@ -1191,6 +1203,76 @@ var nav_menu = function (menuitem) {
         $('#line_osnova').css('stroke-dashoffset','440');
         $('.menu_items').removeClass('active');
         $('#menu_item_3').addClass('active');
+    }
+    if(menuitem === 4){
+        $('#line_osnova').css('stroke-dashoffset','373');
+        $('.menu_items').removeClass('active');
+        $('#menu_item_4').addClass('active');
+        $('#line_menu_items').css('color','#ffffff');
+        $('#line_osnova').css('stroke','#ffffff');
+        $('.line_menu_sv').css('fill','#ffffff');
+        $('.circ_sm').css('background','#ffffff');
+        $('.circ_bg').css('border-color','#ffffff');
+        $('.geo').css('fill','#ffffff');
+        $('.korz').css('stroke','#2f5e74');
+        $('#geo_circ.show').css('border-color','#ffffff');
+        $('#geo_circ_hov').css('border-color','#ffffff');
+    }
+    if(menuitem === 4.5){
+        $('#line_osnova').css('stroke-dashoffset','373');
+        // $('.menu_items').removeClass('active');
+        // $('#menu_item_2').addClass('active');
+        $('#line_menu_items').css('color','#1ca9a3');
+        $('#line_osnova').css('stroke','#4fe5b8');
+        $('.line_menu_sv').css('fill','#4fe5b8');
+        $('.circ_sm').css('background','#4fe5b8');
+        $('.circ_bg').css('border-color','#4fe5b8');
+        $('.geo').css('fill','#20a91b');
+        $('.korz').css('stroke','#ffffff');
+        $('#geo_circ.show').css('border-color','#4fe5b8');
+        $('#geo_circ_hov').css('border-color','#4fe5b8');
+    }
+    if(menuitem === 5){
+        $('#line_osnova').css('stroke-dashoffset','298');
+        $('.menu_items').removeClass('active');
+        $('#menu_item_5').addClass('active');
+        $('#line_menu_items').css('color','#ffffff');
+        $('#line_osnova').css('stroke','#ffffff');
+        $('.line_menu_sv').css('fill','#ffffff');
+        $('.circ_sm').css('background','#ffffff');
+        $('.circ_bg').css('border-color','#ffffff');
+        $('.geo').css('fill','#ffffff');
+        $('.korz').css('stroke','#2f5e74');
+        $('#geo_circ.show').css('border-color','#ffffff');
+        $('#geo_circ_hov').css('border-color','#ffffff');
+    }
+    if(menuitem === 6){
+        $('#line_osnova').css('stroke-dashoffset','210');
+        $('.menu_items').removeClass('active');
+        $('#menu_item_6').addClass('active');
+        $('#line_menu_items').css('color','#ffffff');
+        $('#line_osnova').css('stroke','#ffffff');
+        $('.line_menu_sv').css('fill','#ffffff');
+        $('.circ_sm').css('background','#ffffff');
+        $('.circ_bg').css('border-color','#ffffff');
+        $('.geo').css('fill','#ffffff');
+        $('.korz').css('stroke','#2f5e74');
+        $('#geo_circ.show').css('border-color','#ffffff');
+        $('#geo_circ_hov').css('border-color','#ffffff');
+    }
+    if(menuitem === 7){
+        $('#line_osnova').css('stroke-dashoffset','125');
+        $('.menu_items').removeClass('active');
+        $('#menu_item_7').addClass('active');
+        $('#line_menu_items').css('color','#1ca9a3');
+        $('#line_osnova').css('stroke','#4fe5b8');
+        $('.line_menu_sv').css('fill','#4fe5b8');
+        $('.circ_sm').css('background','#4fe5b8');
+        $('.circ_bg').css('border-color','#4fe5b8');
+        $('.geo').css('fill','#20a91b');
+        $('.korz').css('stroke','#ffffff');
+        $('#geo_circ.show').css('border-color','#4fe5b8');
+        $('#geo_circ_hov').css('border-color','#4fe5b8');
     }
 };
 
