@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="lsic_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 134 121" style="enable-background:new 0 0 134 121;" xml:space="preserve">
+<style type="text/css">
+	.lsic_3_st0{filter:url(#Filter_lsall);}
+	.lsic_3_st1{fill:#FFFFFF;}
+	.lsic_3_st2{opacity:0.3;fill:url(#ls_grad);}
+	.lsic_3_st3{fill:none;stroke:url(#ls_grad);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.lsic_3_st4{fill:none;stroke:url(#ls_grad);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.lsic_3_st5{fill:none;stroke:url(#ls_grad);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.lsic_3_st6{fill:none;stroke:url(#ls_grad);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.lsic_3_st7{fill:none;stroke:url(#ls_grad);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+
+
+
+		.lsic_3_st7, .lsic_3_st5, .lsic_3_st6, .lsic_3_st3{
+	transition: all 1s 0.8s ease-in-out;
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+	}
+
+
+	.lsic_3_st4{ transition: all 1.5s 0.8s ease-in-out;
+    stroke-dasharray: 270;
+    stroke-dashoffset: 270;}
+
+	.lsic_3_inn_op{opacity:0;transition: all 1s 1.5s ease-in-out;}
+
+
+	.lsic_3_st0{ transform-origin: center center;transform: scale3d(0, 0, 0);}
+#grls3{ transform-origin: center center;transform: scale3d(0, 0, 0);}
+
+
+		#lsic_3.active #lsic_3_inn{stroke-dashoffset: 0;}
+	#lsic_3.active .lsic_3_st0{  animation-name: bounceIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;}
+	#lsic_3.active #grls2{  animation-name: bounceIn;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;}
+
+	#lsic_3.active .lsic_3_inn_op{opacity: 0.3;}
+
+
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  40% {
+	 opacity: 1;
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+	70% {
+    -webkit-transform: scale3d(0.85, 0.85, 0.85);
+    transform: scale3d(0.85, 0.85, 0.85);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  40% {
+	 opacity: 1;
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+	70% {
+    -webkit-transform: scale3d(0.85, 0.85, 0.85);
+    transform: scale3d(0.85, 0.85, 0.85);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+</style>
+<filter  filterUnits="userSpaceOnUse" height="121px" id="Filter_lsall" width="134px" x="0px" y="0px">
+	<feOffset  dx="0" dy="5" in="SourceAlpha"></feOffset>
+	<feGaussianBlur  result="blurOut" stdDeviation="2.828"></feGaussianBlur>
+	<feFlood  flood-color="rgb(36, 33, 33)" result="floodOut"></feFlood>
+	<feComposite  in="floodOut" in2="blurOut" operator="atop"></feComposite>
+	<feComponentTransfer>
+		<feFuncA  slope="0.2" type="linear"></feFuncA>
+	</feComponentTransfer>
+	<feMerge>
+		<feMergeNode></feMergeNode>
+		<feMergeNode  in="SourceGraphic"></feMergeNode>
+	</feMerge>
+</filter>
+<g id="ls3_all">
+		<linearGradient id="ls_grad" gradientUnits="userSpaceOnUse" x1="35.7957" y1="77.5814" x2="70.6316" y2="77.5814">
+		<stop  offset="0" style="stop-color:#35E791"/>
+		<stop  offset="1" style="stop-color:#0164B8"/>
+	</linearGradient>
+<g id="ls13_x5F_ov" class="lsic_3_st0">
+	<path class="lsic_3_st1" d="M128,77.5c0.1-0.3,0.2-0.6,0.2-0.9c2.2-9.1,0.1-18.9-4.1-27.4c-6.1-12.4-15.7-24.8-27.7-31.9
+		C83.4,9.5,64.3,4.5,49.7,11.5c-4.7,2.2-6.6,6.4-10.3,9.8C28.8,31.2,17,39.4,14,54.7C11.6,67.1,14.2,84,24.6,92.3
+		c7.2,5.7,16.7,7.9,24.9,10.5c1.4,0.4,2.8,0.8,4.2,1c16.5,2.7,36.4,4.7,52.8-2.8C116.6,96.4,125.1,88,128,77.5z"/>
+</g>
+<g id="ls3_x5F_sh">
+	<path class="lsic_3_st2 lsic_3_inn_op" d="M46.9,41.2c-1.9,2.1-2.7,5.7-2.2,9.2c0.1,0.7,0.3,1.5,0.5,2.3c0.2,0.7,0.3,1.4,0.4,2.1L47.4,65L49.6,78
+		l0.1,0.7c0.5,2.8,0.8,5.1,3.3,6.2c0.3,0.1,0.7,0.3,1.1,0.3c1,0.2,2.1,0.3,2.9,0.3l0.1,0c4.7,0,9.4-0.9,14.1-1.7
+		c0.8-0.1,1.6-0.3,2.4-0.4l-8-46.7c-2.9,0.5-5.8,1-8.7,1.5l-1.6,0.3c-0.5,0.1-1,0.2-1.5,0.2C51.1,39,48.6,39.4,46.9,41.2z"/>
+</g>
+<g id="grsl3">
+	<path class="lsic_3_st3" id="lsic_3_inn" d="M82.9,85.8c6-1.6,10.5-6.4,13.9-11.5"/>
+	<path class="lsic_3_st4" id="lsic_3_inn" d="M76.1,30.4l-32.3,5.6c-0.8,0.1-1.6,0-2.3-0.4l-3.2-1.7c-1.6-0.8-3.6-0.2-4.4,1.4l-0.3,0.6
+		c-0.8,1.6-0.2,3.6,1.4,4.4l2.8,1.4c1.3,0.7,2.2,1.9,2.4,3.3l6.7,39c0.2,1.1-0.1,2.2-0.7,3.1l-2.1,3c-1,1.5-0.7,3.5,0.8,4.5l0.6,0.4
+		c1.5,1,3.5,0.7,4.5-0.8l0.9-1.2c0.7-1,1.8-1.7,3-1.9c0.5-0.1,0.9-0.2,1-0.2l49-8.4l0,0c1.2-0.2,2.5,0,3.6,0.6l1,0.5
+		c1.6,0.8,3.6,0.2,4.4-1.4l0.3-0.6c0.8-1.6,0.2-3.6-1.4-4.4l-3.5-1.8c-1.2-0.6-2-1.7-2.2-3l-6.5-37.5c-0.3-1.5,0.1-3.1,1-4.3
+		l2.2-3.1c1-1.5,0.7-3.5-0.8-4.5l-0.6-0.4c-1.5-1-3.5-0.7-4.5,0.8l-1.5,2.1c-0.9,1.3-2.3,2.1-3.8,2.4l-10.2,1.8"/>
+	<polyline class="lsic_3_st5" id="lsic_3_inn" points="53.4,57.9 62.2,56.4 55.4,69 65.1,67.3 	"/>
+	<polyline class="lsic_3_st6" id="lsic_3_inn" points="85.5,56.5 92.7,55.2 87,65.5 95,64.1 	"/>
+	<polyline class="lsic_3_st7" id="lsic_3_inn" points="67.2,47.3 79,45.1 69.8,62.1 82.9,59.8 	"/>
+</g>
+</g>
+</svg>

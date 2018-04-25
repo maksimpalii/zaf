@@ -163,7 +163,7 @@ body {
 
 }
 .menu_items__inn{position: relative;}
-.menu_items span { opacity: 0;transition: all 0.3s ease-in-out;
+.menu_items span { opacity: 0;transition: all 0.5s ease-in-out;
   margin-right: 30px;
   display: block;    width: 110px;
 }
@@ -227,10 +227,10 @@ body {
 }
 #line_osnova{  width: 50px;
   height: 695px;position: absolute; stroke:#ffffff;
-  top:0;    left: -2px;
+  top:0;    left: -0.105rem;
   stroke-dasharray: 725;
   stroke-dashoffset: 599;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 #line_menu {
   position: absolute;
@@ -609,7 +609,14 @@ h1 {
   left: 0;
   z-index: 0;
 }
-
+#sec6{
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
 
 @import 'common/_preloader';
 @import 'common/header';
@@ -618,6 +625,7 @@ h1 {
 @import 'common/block3';
 @import 'common/block4';
 @import 'common/block5';
+@import 'common/block6';
 
 
 

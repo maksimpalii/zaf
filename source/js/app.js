@@ -371,6 +371,7 @@ var sec5_to_sec4_hf2 = (function () {
                     $('#section5').removeClass('active');
                     $('#section4').addClass('active');
                     canvasTimeline.linesec5.gotoAndPlay('linesec5_out');
+                    nav_menu(4.5);
                 }
             })
 
@@ -638,6 +639,7 @@ var sec4_hf1_to_sec4 = (function () {
             $('#sec4_half').velocity({opacity: 0}, {
                 duration: 1000, easing: 'easeInSine', complete: function () {
                     canvasTimeline.race2.racein2.parallax26.gotoAndPlay('road2_hide');
+                    nav_menu(4);
                 }
             });
         }
@@ -668,6 +670,7 @@ var sec4_to_sec3 = (function () {
                     $('#section4').removeClass('active');
                     $('#section3').addClass('active');
                     canvasTimeline.kishpage.gotoAndPlay('pack_out');
+                    nav_menu(3);
                 }
             });
         }
@@ -714,6 +717,7 @@ var sec3_to_sec2 = (function () {
                     $('#section3').removeClass('active');
                     $('#section2').addClass('active');
                     canvasTimeline.race.gotoAndPlay('road_trans_out');
+                    nav_menu(2);
                 }
             });
         }
@@ -865,7 +869,7 @@ var sec2_to_sec1_half = (function () {
             $('#sec2').velocity({opacity: 0}, {
                 duration: 1000, easing: 'easeIn', complete: function () {
                     canvasTimeline.race.racein.parallax26.gotoAndPlay('road_hide');
-
+                    nav_menu(1);
                 }
             });
         }
@@ -1185,6 +1189,20 @@ var raceFirstCall = function (raceCall) {
 
 
 var nav_menu = function (menuitem) {
+    if(menuitem === 1){
+        $('#line_osnova').css('stroke-dashoffset','600');
+        $('.menu_items').removeClass('active');
+        $('#menu_item_1').addClass('active');
+        $('#line_menu_items').css('color','#ffffff');
+        $('#line_osnova').css('stroke','#ffffff');
+        $('.line_menu_sv').css('fill','#ffffff');
+        $('.circ_sm').css('background','#ffffff');
+        $('.circ_bg').css('border-color','#ffffff');
+        $('.geo').css('fill','#ffffff');
+        $('.korz').css('stroke','#2f5e74');
+        $('#geo_circ.show').css('border-color','#ffffff');
+        $('#geo_circ_hov').css('border-color','#ffffff');
+    }
     if(menuitem === 2){
         $('#line_osnova').css('stroke-dashoffset','525');
         $('.menu_items').removeClass('active');
@@ -1203,6 +1221,15 @@ var nav_menu = function (menuitem) {
         $('#line_osnova').css('stroke-dashoffset','440');
         $('.menu_items').removeClass('active');
         $('#menu_item_3').addClass('active');
+        $('#line_menu_items').css('color','#1ca9a3');
+        $('#line_osnova').css('stroke','#4fe5b8');
+        $('.line_menu_sv').css('fill','#4fe5b8');
+        $('.circ_sm').css('background','#4fe5b8');
+        $('.circ_bg').css('border-color','#4fe5b8');
+        $('.geo').css('fill','#20a91b');
+        $('.korz').css('stroke','#ffffff');
+        $('#geo_circ.show').css('border-color','#4fe5b8');
+        $('#geo_circ_hov').css('border-color','#4fe5b8');
     }
     if(menuitem === 4){
         $('#line_osnova').css('stroke-dashoffset','373');
@@ -1220,8 +1247,8 @@ var nav_menu = function (menuitem) {
     }
     if(menuitem === 4.5){
         $('#line_osnova').css('stroke-dashoffset','373');
-        // $('.menu_items').removeClass('active');
-        // $('#menu_item_2').addClass('active');
+        $('.menu_items').removeClass('active');
+        $('#menu_item_4').addClass('active');
         $('#line_menu_items').css('color','#1ca9a3');
         $('#line_osnova').css('stroke','#4fe5b8');
         $('.line_menu_sv').css('fill','#4fe5b8');
@@ -1278,12 +1305,14 @@ var nav_menu = function (menuitem) {
 
 
 var loadFonDone = function () {
-    sec1_inn.go();
-    canvasTimeline.race.visible = false;
-    canvasTimeline.race2.visible = false;
-    canvasTimeline.plafirst.gotoAndPlay('first_in');
+    // sec1_inn.go();
+    // canvasTimeline.race.visible = false;
+    // canvasTimeline.race2.visible = false;
+    // canvasTimeline.plafirst.gotoAndPlay('first_in');
 
-
+    sec6_inn.go();
+    $('#section1').removeClass('active');
+    $('#section6').addClass('active');
 
     // $('#section1').removeClass('active');
     // $('#section5').addClass('active');
