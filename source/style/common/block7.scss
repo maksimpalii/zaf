@@ -1,0 +1,10 @@
+#sec7{opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;}
+.content-map{position: absolute;
+  width: 800px; height: 500px; padding-top: 50px;
+@include centered();
+}

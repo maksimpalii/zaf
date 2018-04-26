@@ -1,4 +1,14 @@
-
+#ftext_6{
+  position: absolute;
+  width: 100%;
+  top:100px;
+  opacity: 0;
+}
+#ftext_6 h1{
+  text-align: center;
+  color: #2f508d;
+  text-transform: uppercase;
+}
 
 #icons_last{
   position: absolute;
@@ -13,6 +23,7 @@
 #icons_last_inn{
 position: absolute;
   @include centered('y');
+  top:56%;
 }
 #icons_ls1, #icons_ls2, #icons_ls3, #icons_ls4{width: 140px;
 position: relative;
@@ -46,6 +57,10 @@ position: relative;
 .lsic_1_st19{fill:none;stroke:url(#ls_grad);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
 
+#lsic_1{overflow: visible;}
+#lsic_2{overflow: visible;}
+#lsic_3{overflow: visible;}
+#lsic_4{overflow: visible;}
 
 .lsic_1_st4, .lsic_1_st5, .lsic_1_st10, .lsic_1_st11, .lsic_1_st12, .lsic_1_st13, .lsic_1_st15, .lsic_1_st16, .lsic_1_st17, .lsic_1_st18, .lsic_1_st19{
   transition: all 1s 0.8s ease-in-out;
@@ -70,19 +85,19 @@ position: relative;
 #grls1{ transform-origin: center center;transform: scale3d(0, 0, 0);}
 
 
-#lsic_1.active #lsic_1_inn{stroke-dashoffset: 0;}
-#lsic_1.active .lsic_1_st0{  animation-name: bounceIn;
+#icons_ls1.active #lsic_1_inn{stroke-dashoffset: 0;}
+#icons_ls1.active .lsic_1_st0{  animation-name: bounceIn;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;}
-#lsic_1.active #grls1{  animation-name: bounceIn;
+#icons_ls1.active #grls1{  animation-name: bounceIn;
   animation-duration: 1.5s;
   animation-delay: 0.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;}
 
-#lsic_1.active .lsic_1_inn_op{opacity: 0.3;}
-
+#icons_ls1.active .lsic_1_inn_op{opacity: 0.3;}
+#icon_ls1_txt, #icon_ls2_txt, #icon_ls3_txt, #icon_ls4_txt{opacity: 0;}
 
 /* icon 2 */
 
@@ -119,18 +134,18 @@ position: relative;
 #grls2{ transform-origin: center center;transform: scale3d(0, 0, 0);}
 
 
-#lsic_2.active #lsic_2_inn{stroke-dashoffset: 0;}
-#lsic_2.active .lsic_2_st0{  animation-name: bounceIn;
+#icons_ls2.active #lsic_2_inn{stroke-dashoffset: 0;}
+#icons_ls2.active .lsic_2_st0{  animation-name: bounceIn;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;}
-#lsic_2.active #grls2{  animation-name: bounceIn;
+#icons_ls2.active #grls2{  animation-name: bounceIn;
   animation-duration: 1.5s;
   animation-delay: 0.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;}
 
-#lsic_2.active .lsic_2_inn_op{opacity: 0.3;}
+#icons_ls2.active .lsic_2_inn_op{opacity: 0.3;}
 
 /* icon 3 */
 
@@ -163,18 +178,18 @@ position: relative;
 #grls3{ transform-origin: center center;transform: scale3d(0, 0, 0);}
 
 
-#lsic_3.active #lsic_3_inn{stroke-dashoffset: 0;}
-#lsic_3.active .lsic_3_st0{  animation-name: bounceIn;
+#icons_ls3.active #lsic_3_inn{stroke-dashoffset: 0;}
+#icons_ls3.active .lsic_3_st0{  animation-name: bounceIn;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;}
-#lsic_3.active #grls2{  animation-name: bounceIn;
+#icons_ls3.active #grls2{  animation-name: bounceIn;
   animation-duration: 1.5s;
   animation-delay: 0.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;}
 
-#lsic_3.active .lsic_3_inn_op{opacity: 0.3;}
+#icons_ls3.active .lsic_3_inn_op{opacity: 0.3;}
 
 /* icon 4  */
 
@@ -220,22 +235,118 @@ position: relative;
 #grls4{ transform-origin: center center;transform: scale3d(0, 0, 0);}
 
 
-#lsic_4.active #lsic_4_inn{stroke-dashoffset: 0;}
-#lsic_4.active .lsic_4_st0{  animation-name: bounceIn;
+#icons_ls4.active #lsic_4_inn{stroke-dashoffset: 0;}
+#icons_ls4.active .lsic_4_st0{  animation-name: bounceIn;
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;}
-#lsic_4.active #grls4{  animation-name: bounceIn;
+#icons_ls4.active #grls4{  animation-name: bounceIn;
   animation-duration: 1.5s;
   animation-delay: 0.5s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;}
 
-#lsic_4.active .lsic_4_inn_op{opacity: 0.3;}
+#icons_ls4.active .lsic_4_inn_op{opacity: 0.3;}
 
 /* icon plus */
 #pluskont{filter:url(#Filter_lsallplus);}
 #icon_plus{width: 190px;height: 190px;
 position: absolute;
   @include centered();
+  left:58%;
+}
+
+
+#dirapack2{
+  position: absolute;
+  width: 28%;
+  height: 50%;
+  left: 19%;
+  top: 30%;
+  z-index: 10;
+}
+#dirapack2_ov{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+
+}
+.ov2sst0, .ov2sst2, .ov2sst4{
+  transform-origin: center;
+  transform: scale(0);
+}
+#pi2lul{
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  transform: scale(0);
+
+  left: 45%;
+  top: 45%;
+}
+#pi2lul2{
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  transform: scale(0);
+
+  right: 45%;
+  bottom: 45%;
+}
+#pi2lul2_in{
+  transform: rotate(90deg);
+}
+#good2ic{
+  position: absolute;
+  width: 50%;
+  right: 3%;
+  z-index: 10;
+  transform: scale(0);
+}
+#pack2pill{
+  width: 303px;
+  height: 232px;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  z-index: 10;
+  transform-origin: center;
+  transform: scale(0);
+}
+#pack2pill_in{
+  width: 303px;
+  height: 232px;
+  position: relative;
+  transform: rotateZ(-8deg);
+}
+.osnova2{    position: absolute;    width: 100%;
+  height: auto;
+  z-index: 10;}
+.back_osnova2{
+  position: absolute;
+  z-index: 9;height: 100%;width: auto;
+  right: 0;
+}
+
+#ls_plus{overflow: visible;}
+#ls_plus_in{transform-origin: center center;transform: scale(0);}
+#pluskont{transform-origin: center center;transform: scale3d(0, 0, 0);}
+
+#icon_plus.active #pluskont{
+  transform:scale(1);
+
+  animation-name: bounceIn;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+#icon_plus.active #ls_plus_in{
+  transform:scale(1);
+
+  animation-name: bounceIn;
+  animation-duration: 1.5s;
+  animation-delay: 0.7s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }

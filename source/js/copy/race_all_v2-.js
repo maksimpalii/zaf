@@ -12040,7 +12040,7 @@ p.nominalBounds = new cjs.Rectangle(-245.9,-380.9,492,761.8);
 
 
 (lib.plafirst = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{NL:1,first_in:2,first_trans_in:155,first_trans_out:265,first_all_out:375,first_all_out_in:418});
+	this.initialize(mode,startPosition,loop,{first_in:1,first_trans_in:155,first_trans_out:265,first_all_out:375,first_all_out_in:418});
 
 	// timeline functions:
 	this.frame_0 = function() {
@@ -12090,7 +12090,7 @@ p.nominalBounds = new cjs.Rectangle(-245.9,-380.9,492,761.8);
 	this.triangle_group.setTransform(419,123);
 	this.triangle_group._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.triangle_group).wait(2).to({_off:false},0).wait(458));
+	this.timeline.addTween(cjs.Tween.get(this.triangle_group).wait(1).to({_off:false},0).wait(459));
 
 	// green_mask  - копия (mask)
 	var mask = new cjs.Shape();
@@ -12486,7 +12486,7 @@ p.nominalBounds = new cjs.Rectangle(-245.9,-380.9,492,761.8);
 	this.instance_5.shadow = new cjs.Shadow("rgba(0,0,0,0.498)",5,0,40);
 	this.instance_5._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(2).to({_off:false},0).to({_off:true},153).wait(305));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(1).to({_off:false},0).to({_off:true},154).wait(305));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = null;
