@@ -233,16 +233,33 @@ var sec5_hf1_from_sec6 = (function () {
         inn: function (raceCall) {
             if (raceCall === 'linesec5_all_out_in-end' && direction === 'up' && prevSlide === 'sec5-r1') {
                 $('#sec5').velocity({opacity: 1}, {
-                    duration: 1000, easing: 'easeInSine'});
-                $('#sec5_half').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeInSine', complete: function () {
                         console.log('sec5_hf1_from_sec6-end');
                         indexSlide = 'sec5-r1';
                         nextSlide = 'sec6';
                         prevSlide = 'sec5';
                         Trigger_Anim = true;
-                    }
-                });
+                    }});
+
+
+                $('#sec5').css('z-index','0');
+                // canvasTimeline.linesec5.gotoAndPlay('linesec5_trans_in');
+                $('#dirapack').css('bottom','25%');
+                $('#packpill_in').css('transform','rotateZ(0deg)');
+                $('.back_osnova').css('right','-25%');
+                // var twes06s1_ = TweenMax.to($('#packpill_in'), 0.7, {"transform": "rotateZ(0deg)", yoyo: false, repeat: 0, ease: Power2.easeIn});
+                // $('.back_osnova').velocity({right: '-25%'}, {delay: 700, duration: 700, easing: 'easeIn'});
+
+                $('#sec5_half').velocity({opacity: 1}, {duration: 1000, easing: 'easeInSine' });
+                        var twes05s1_ = TweenMax.to($('.ovsst0'), 0.7, {"transform": "scale(1)", yoyo: false, repeat: 0, ease: Power2.easeIn});
+                        var twes05s2_ = TweenMax.to($('.ovsst2'), 0.7, {"transform": "scale(1)", yoyo: false, delay: 0.3, repeat: 0, ease: Power2.easeIn});
+                        var twes05s3_ = TweenMax.to($('.ovsst4'), 0.7, {"transform": "scale(1)", yoyo: false, delay: 0.5, repeat: 0, ease: Power2.easeIn});
+                        var twes05s4_ = TweenMax.to($('#packpill'), 0.7, {"transform": "scale(1)", yoyo: false, delay: 0.7, repeat: 0, ease: Power2.easeIn});
+                        var twes06_ = TweenMax.to($('#pilul'), 1, {"transform": "scale(1)", "left": 0, "top": 0, yoyo: false, delay: 1, repeat: 0, ease: Power2.easeIn});
+                        var twes062_ = TweenMax.to($('#pilul2'), 1, {"transform": "scale(0.7)", "right": 0, "bottom": 0, yoyo: false, delay: 1, repeat: 0, ease: Power2.easeIn});
+                        var twes07_ = TweenMax.to($('#goodic'), 0.5, {"transform": "scale(1)", "right": "3%", "top": 0, yoyo: false, delay: 1, repeat: 0, ease: Power2.easeIn});
+
+
             }
         },
         go: function () {
@@ -297,13 +314,30 @@ var sec5_hf1_to_sec5 = (function () {
                 $('#pharm_union_dop').velocity({opacity: 1}, {duration: 1000, easing: 'easeIn'});
                 $('#sec5_txt').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeIn', complete: function () {
+                        // console.log('sec5_hf1_to_sec5-end');
+                        // indexSlide = 'sec5';
+                        // nextSlide = 'sec5-r1';
+                        // prevSlide = 'sec4-r2';
+                        // Trigger_Anim = true;
+                    }
+                })
+
+                $('#sec5').velocity({opacity: 1}, {duration: 1000, easing: 'easeInSine'});
+                $('#sec5').css('z-index','1');
+                $('#ftext_5').velocity({opacity: 1, marginTop: -30}, {delay: 400, duration: 1000, easing: 'easeIn'});
+                $('#pharm_union_dop').velocity({opacity: 1}, {delay: 800, duration: 1000, easing: 'easeIn'});
+                $('#sec5_txt #ftext_op').velocity({opacity: 1}, {delay: 500, duration: 900, easing: 'easeIn'});
+                $('#button5').velocity({opacity: 1, marginTop: 30}, {delay: 600, duration: 1000, easing: 'easeIn'});
+                $('#button5 #btn_text p').velocity({opacity: 1, marginTop: 0}, {delay: 700, duration: 1000, easing: 'easeIn'});
+                $('#button5 #btn_str').velocity({opacity: 1, right: '20%'}, {
+                    delay: 800, duration: 1000, easing: 'easeIn', complete: function () {
                         console.log('sec5_hf1_to_sec5-end');
                         indexSlide = 'sec5';
                         nextSlide = 'sec5-r1';
                         prevSlide = 'sec4-r2';
                         Trigger_Anim = true;
                     }
-                })
+                });
             }
         },
         go: function () {
@@ -396,16 +430,47 @@ var sec4_hf2_from_sec5 = (function () {
             if (raceCall === 'road2_show-end' && direction === 'up') {
                 $('#sec4_half_2').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeInSine', complete: function () {
+                    }
+                });
+                $('#ftext_4h').velocity({opacity: 1, translateY: -50}, {delay: 300, duration: 1000, easing: 'easeIn'});
+                $('#diraman6').velocity({opacity: 1}, {
+                    duration: 100, easing: 'easeIn', complete: function () {
+
+                        var twes06 = TweenMax.to($('#man6'), .5, {"transform": "scale(1)", yoyo: false, delay: 0.8, repeat: 0, ease: Power2.easeIn});
+
+                        var dir06 = TweenMax.to($('#dir6_big'), 0.7, {"transform": "scale(1)", yoyo: false, repeat: 0, ease: Power2.easeIn});
+                        var dir062 = TweenMax.to($('#dir6_med'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.3, repeat: 0, ease: Power2.easeIn});
+                        var dir063 = TweenMax.to($('#dir6_small'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.4, repeat: 0, ease: Power2.easeIn});
+
+                        var twes_61 = TweenMax.to($('#head6'), 1, {"transform": "rotateZ(5deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes_62 = TweenMax.to($('#allhand6'), 1, {"transform": "rotateZ(-7deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                    }
+                });
+
+                $('#h4fic1').velocity({opacity: 1}, {delay: 500, duration: 1000, easing: 'easeIn'});
+                $('#h4fic2').velocity({opacity: 1}, {delay: 800, duration: 1000, easing: 'easeIn'});
+                $('#h4fic3').velocity({opacity: 1}, {
+                    delay: 1100, duration: 1000, easing: 'easeIn', complete: function () {
                         console.log('sec4_hf2_inn-end');
                         indexSlide = 'sec4-r2';
                         nextSlide = 'sec5';
                         prevSlide = 'sec4-r1';
                         Trigger_Anim = true;
                     }
-                })
+                });
+                // $('#sec4_half_2').velocity({opacity: 1}, {
+                //     duration: 1000, easing: 'easeInSine', complete: function () {
+                //         console.log('sec4_hf2_inn-end');
+                //         indexSlide = 'sec4-r2';
+                //         nextSlide = 'sec5';
+                //         prevSlide = 'sec4-r1';
+                //         Trigger_Anim = true;
+                //     }
+                // })
             }
         },
         go: function () {
+            canvasTimeline.race2.gotoAndPlay('road2_trans_in');
             canvasTimeline.race2.racein2.parallax26.gotoAndPlay('road2_show');
 
         }
@@ -458,13 +523,8 @@ var sec4_hf2_inn = (function () {
             if (raceCall === 'road2_trans_in-end') {
                 $('#sec4_half_2').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeInSine', complete: function () {
-                        // console.log('sec4_hf2_inn-end');
-                        // indexSlide = 'sec4-r2';
-                        // nextSlide = 'sec5';
-                        // prevSlide = 'sec4-r1';
-                        // Trigger_Anim = true;
                     }
-                })
+                });
                 $('#ftext_4h').velocity({opacity: 1, translateY: -50}, {delay: 300, duration: 1000, easing: 'easeIn'});
                 $('#diraman6').velocity({opacity: 1}, {
                     duration: 100, easing: 'easeIn', complete: function () {
@@ -506,13 +566,67 @@ var sec4_hf2_to_sec4_hf1 = (function () {
             if (raceCall === 'road2_trans_out-end' && direction === 'up') {
                 $('#sec4_half').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeInSine', complete: function () {
-                        console.log('sec4_hf2_to_sec4_hf1-end');
+                        // console.log('sec4_hf2_to_sec4_hf1-end');
+                        // indexSlide = 'sec4-r1';
+                        // nextSlide = 'sec4-r2';
+                        // prevSlide = 'sec4';
+                        // Trigger_Anim = true;
+                    }
+                })
+                $('#ftext_4').velocity({opacity: 1, translateY: -50}, {delay: 300, duration: 1000, easing: 'easeIn'});
+                $('#diraman3').velocity({opacity: 1}, {
+                    duration: 100, easing: 'easeIn', complete: function () {
+
+                        var twes03 = TweenMax.to($('#man3'), .5, {"transform": "scale(1)", yoyo: false, delay: 0.8, repeat: 0, ease: Power2.easeIn});
+
+
+                        var dir03 = TweenMax.to($('#dir3_big'), 0.7, {"transform": "scale(1)", yoyo: false, repeat: 0, ease: Power2.easeIn});
+                        var dir032 = TweenMax.to($('#dir3_med'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.3, repeat: 0, ease: Power2.easeIn});
+                        var dir033 = TweenMax.to($('#dir3_small'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.4, repeat: 0, ease: Power2.easeIn});
+
+                        var twesl2 = TweenMax.to($('#lefthand3'), 1, {"transform": "rotateZ(19deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes22 = TweenMax.to($('#righthand3'), 1, {"transform": "rotateZ(15deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes32 = TweenMax.to($('#head3'), 1, {"transform": "rotateZ(9deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes42 = TweenMax.to($('#shvabra'), 1, {"transform": "translateX(-17px)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes52 = TweenMax.to($('#shv_inn'), 1, {"transform": "rotateZ(2deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                    }
+                });
+                $('#diraman4').velocity({opacity: 1}, {
+                    delay: 300, duration: 100, easing: 'easeIn', complete: function () {
+                        var twes04 = TweenMax.to($('#man4'), .5, {"transform": "scale(1)", yoyo: false, delay: 0.8, repeat: 0, ease: Power2.easeIn});
+
+                        var dir04 = TweenMax.to($('#dir4_big'), 0.7, {"transform": "scale(1)", yoyo: false, repeat: 0, ease: Power2.easeIn});
+                        var dir042 = TweenMax.to($('#dir4_med'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.3, repeat: 0, ease: Power2.easeIn});
+                        var dir043 = TweenMax.to($('#dir4_small'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.4, repeat: 0, ease: Power2.easeIn});
+
+                        var twes_41 = TweenMax.to($('#head4'), 1, {"transform": "rotateZ(10deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes_42 = TweenMax.to($('#allhand4'), 1, {"transform": "rotateZ(10deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                    }
+                });
+                $('#diraman5').velocity({opacity: 1}, {
+                    delay: 500, duration: 100, easing: 'easeIn', complete: function () {
+                        var twes05 = TweenMax.to($('#man5'), .5, {"transform": "scale(1)", yoyo: false, delay: 0.8, repeat: 0, ease: Power2.easeIn});
+
+                        var dir05 = TweenMax.to($('#dir5_big'), 0.7, {"transform": "scale(1)", yoyo: false, repeat: 0, ease: Power2.easeIn});
+                        var dir052 = TweenMax.to($('#dir5_med'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.3, repeat: 0, ease: Power2.easeIn});
+                        var dir053 = TweenMax.to($('#dir5_small'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.4, repeat: 0, ease: Power2.easeIn});
+
+                        var twes_51 = TweenMax.to($('#head5'), 1, {"transform": "rotateZ(7deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes_52 = TweenMax.to($('#allhand5'), 1, {"transform": "rotateZ(-7deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+
+                    }
+                });
+                $('#h4ic1').velocity({opacity: 1}, {delay: 500, duration: 1000, easing: 'easeIn'});
+                $('#h4ic2').velocity({opacity: 1}, {delay: 800, duration: 1000, easing: 'easeIn'});
+                $('#h4ic3').velocity({opacity: 1}, {delay: 1100, duration: 1000, easing: 'easeIn'});
+                $('#h4ic4').velocity({opacity: 1}, {
+                    delay: 1400, duration: 1000, easing: 'easeIn', complete: function () {
                         indexSlide = 'sec4-r1';
                         nextSlide = 'sec4-r2';
                         prevSlide = 'sec4';
                         Trigger_Anim = true;
                     }
-                })
+                });
             }
         },
         go: function () {
@@ -704,16 +818,81 @@ var sec4_to_sec3 = (function () {
         inn: function (raceCall) {
             console.log(raceCall);
             if (raceCall === 'pack_out-end' && prevSlide === 'sec3' && direction === 'up') {
-
+                canvasTimeline.race.gotoAndPlay('road_trans_in');
                 $('#sec3').velocity({opacity: 1}, {
                     duration: 1000, easing: 'easeInSine', complete: function () {
-                        console.log('sec3_inn-end');
+                        // console.log('sec3_inn-end');
                         canvasTimeline.race.visible = true;
                         canvasTimeline.race.racein.parallax26.gotoAndPlay('road_show');
-                        indexSlide = 'sec3';
-                        nextSlide = 'sec4';
-                        prevSlide = 'sec2';
-                        Trigger_Anim = true;
+                        // indexSlide = 'sec3';
+                        // nextSlide = 'sec4';
+                        // prevSlide = 'sec2';
+                        // Trigger_Anim = true;
+                        var twes21 = TweenMax.to($('#man2'), .5, {"transform": "scale(1)", yoyo: false, delay: 0.8, repeat: 0, ease: Power2.easeIn});
+
+
+                        var dir21 = TweenMax.to($('#dir2_big'), 0.7, {"transform": "scale(1)", yoyo: false, repeat: 0, ease: Power2.easeIn});
+                        var dir022 = TweenMax.to($('#dir2_med'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.3, repeat: 0, ease: Power2.easeIn});
+                        var dir023 = TweenMax.to($('#dir2_small'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.4, repeat: 0, ease: Power2.easeIn});
+
+
+                        var ln12 = document.getElementById("LeftHand2");
+                        var ln22 = document.getElementById("RightHand2");
+                        var ln32 = document.getElementById("head2");
+                        var twesl2 = TweenMax.to(ln12, 1, {"transform": "matrix( 0.999847412109375, 0.0154266357421875, -0.0154266357421875, 0.999847412109375, 41.1,56.1)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes22 = TweenMax.to(ln22, 1, {"transform": "matrix( 0.987823486328125, 0.15557861328125, -0.15557861328125, 0.987823486328125, 131.45,68.1)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes32 = TweenMax.to(ln32, 1, {"transform": "matrix( 0.999053955078125, -0.04022216796875, 0.04022216796875, 0.999053955078125, 94.4,38.7)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        $('#ftext_3').velocity({opacity: 1, translateY: -50}, {delay: 300, duration: 1000, easing: 'easeIn'});
+
+                        $('#ic_41_1').velocity({opacity: 1}, {
+                            delay: 100, duration: 100, easing: 'easeIn', complete: function () {
+                                $(this).addClass('active');
+                                $('#icon_21_txt_inn').velocity({opacity: 1, translateX: -45}, {delay: 100, duration: 1300, easing: 'easeIn'});
+                                $('#triang_41').velocity({opacity: 1}, {duration: 500, easing: 'easeIn'});
+                            }
+                        });
+
+                        $('#ic_41_2').velocity({opacity: 1}, {
+                            delay: 500, duration: 100, easing: 'easeIn', complete: function () {
+                                $(this).addClass('active');
+                                $('#icon_22_txt_inn').velocity({opacity: 1, translateX: -45}, {delay: 500, duration: 1300, easing: 'easeIn'});
+                                $('#triang_42').velocity({opacity: 1}, {duration: 500, easing: 'easeIn'});
+                            }
+                        });
+
+                        $('#ic_41_3').velocity({opacity: 1}, {
+                            delay: 100, duration: 100, easing: 'easeIn', complete: function () {
+                                $(this).addClass('active');
+                                $('#icon_23_txt_inn').velocity({opacity: 1, translateX: 45}, {delay: 100, duration: 1300, easing: 'easeIn'});
+                                $('#triang_43').velocity({opacity: 1}, {duration: 500, easing: 'easeIn'});
+                            }
+                        });
+
+                        $('#ic_41_4').velocity({opacity: 1}, {
+                            delay: 500, duration: 100, easing: 'easeIn', complete: function () {
+                                $(this).addClass('active');
+                                $('#icon_24_txt_inn').velocity({opacity: 1, translateX: 45}, {delay: 500, duration: 1300, easing: 'easeIn'});
+                                $('#triang_44').velocity({opacity: 1}, {duration: 500, easing: 'easeIn'});
+                            }
+                        });
+
+                        $('#ic_41_5').velocity({opacity: 1}, {
+                            delay: 100, duration: 100, easing: 'easeIn', complete: function () {
+                                $(this).addClass('active');
+                                $('#triang_45').velocity({opacity: 1}, {delay: 100, duration: 500, easing: 'easeIn'});
+                                $('#icon_25_txt_inn').velocity({opacity: 1, translateX: 45}, {
+                                    delay: 500, duration: 1300, easing: 'easeIn', complete: function () {
+
+                                        console.log('sec3_inn-end');
+                                        indexSlide = 'sec3';
+                                        nextSlide = 'sec4';
+                                        prevSlide = 'sec2';
+                                        Trigger_Anim = true;
+
+                                    }
+                                });
+                            }
+                        });
                     }
                 });
             }
@@ -754,14 +933,67 @@ var sec3_to_sec2 = (function () {
     return {
         inn: function (raceCall) {
             if (raceCall === 'road_trans_out-end' && prevSlide === 'sec2') {
+                // $('#sec2').velocity({opacity: 1}, {
+                //     duration: 1000, easing: 'easeInSine', complete: function () {
+                //         console.log('sec3_to_sec2-end');
+                //         indexSlide = 'sec2';
+                //         nextSlide = 'sec3';
+                //         prevSlide = 'sec1_trans';
+                //         Trigger_Anim = true;
+                //     }
+                // });
+
+                // canvasTimeline.plafirst.visible = false;
+                // canvasTimeline.race.visible = true;
+                // canvasTimeline.race.racein.parallax26.gotoAndPlay('road_show');
                 $('#sec2').velocity({opacity: 1}, {
-                    duration: 1000, easing: 'easeInSine', complete: function () {
-                        console.log('sec3_to_sec2-end');
-                        indexSlide = 'sec2';
-                        nextSlide = 'sec3';
-                        prevSlide = 'sec1_trans';
-                        Trigger_Anim = true;
+                    duration: 1000, easing: 'easeIn', complete: function () {
+                                console.log('sec3_to_sec2-end');
+                                indexSlide = 'sec2';
+                                nextSlide = 'sec3';
+                                prevSlide = 'sec1_trans';
+                                Trigger_Anim = true;
                     }
+                });
+
+                var twes01 = TweenMax.to($('#man'), .5, {"transform": "scale(1)", yoyo: false, delay: 0.8, repeat: 0, ease: Power2.easeIn});
+
+
+                var dir01 = TweenMax.to($('#dir1_big'), 0.7, {"transform": "scale(1)", yoyo: false, repeat: 0, ease: Power2.easeIn});
+                var dir012 = TweenMax.to($('#dir1_med'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.3, repeat: 0, ease: Power2.easeIn});
+                var dir013 = TweenMax.to($('#dir1_small'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.4, repeat: 0, ease: Power2.easeIn});
+
+
+                var ln1 = document.getElementById("LeftHand");
+                var ln2 = document.getElementById("RightHand");
+                var ln3 = document.getElementById("head");
+                var twesl = TweenMax.to(ln1, 1, {"transform": "matrix( 0.999847412109375, 0.0154266357421875, -0.0154266357421875, 0.999847412109375, 41.1,56.1)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                var twes2 = TweenMax.to(ln2, 1, {"transform": "matrix( 0.987823486328125, 0.15557861328125, -0.15557861328125, 0.987823486328125, 131.45,68.1)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                var twes3 = TweenMax.to(ln3, 1, {"transform": "matrix( 0.999053955078125, -0.04022216796875, 0.04022216796875, 0.999053955078125, 94.4,38.7)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                $('#ftext_2').velocity({opacity: 1, translateY: -50}, {delay: 300, duration: 1000, easing: 'easeIn'});
+                $('#ic_1_1').fadeIn(100, function () {
+                    $(this).addClass('active');
+                    $('#icon_1_txt_inn').velocity({opacity: 1, translateX: -45}, {delay: 100, duration: 1300, easing: 'easeIn'});
+                });
+                $('#ic_2_1').fadeIn(1200, function () {
+                    $(this).addClass('active');
+                    $('#icon_2_txt_inn').velocity({opacity: 1, translateX: 45}, {delay: 1100, duration: 1300, easing: 'easeIn'});
+                });
+                $('#ic_3_1').fadeIn(1600, function () {
+                    $(this).addClass('active');
+                    $('#icon_3_txt_inn').velocity({opacity: 1, translateX: -45}, {delay: 1500, duration: 1300, easing: 'easeIn'});
+                });
+                $('#ic_4_1').fadeIn(600, function () {
+                    $(this).addClass('active');
+                    $('#icon_4_txt_inn').velocity({opacity: 1, translateX: 45}, {delay: 500, duration: 1300, easing: 'easeIn'});
+                });
+                $('#ic_5_1').fadeIn(600, function () {
+                    $(this).addClass('active');
+                    $('#icon_5_txt_inn').velocity({opacity: 1, translateX: -45}, {delay: 500, duration: 1300, easing: 'easeIn'});
+                });
+                $('#ic_6_1').fadeIn(2000, function () {
+                    $(this).addClass('active');
+                    $('#icon_6_txt_inn').velocity({opacity: 1, translateX: 45}, {delay: 1800, duration: 1300, easing: 'easeIn'});
                 });
             }
         },
@@ -986,6 +1218,7 @@ var sec2_to_sec1_half = (function () {
         go: function () {
             $('#sec2').velocity({opacity: 0}, {
                 duration: 1000, easing: 'easeIn', complete: function () {
+                    $('#pharm_union').css('opacity','0');
                     canvasTimeline.race.racein.parallax26.gotoAndPlay('road_hide');
                     nav_menu(1);
                 }
@@ -1163,6 +1396,7 @@ var sec1_inn = (function () {
                     $('#icons_geo').addClass('show');
                     $('#menu_item_7 span').addClass('show');
                     $('#scroll_down').addClass('show');
+                    $('#line_osnova').velocity({opacity: 1}, {duration: 500, easing: 'easeIn'});
                 }
             });
             $('#menu_item_6').velocity({opacity: 1}, {delay: 3200, duration: 200, easing: 'easeIn'});
@@ -1521,6 +1755,7 @@ window.document.onkeydown = function (e) {
 };
 
 $('#menu_item_6').click(function () {
+    $('#scroll_down').addClass('hide');
     if(indexSlide === 'sec1'){
         direction = 'click';
         prevSlide = 'n';
@@ -1533,7 +1768,7 @@ $('#menu_item_6').click(function () {
             duration: 1000, easing: 'easeInSine', complete: function () {
 
             }
-        })
+        });
         var twesls1_ = TweenMax.to($('.ov2sst0'), 0.7, {"transform": "scale(1)", yoyo: false, repeat: 0, ease: Power2.easeIn});
         var twesls2_ = TweenMax.to($('.ov2sst2'), 0.7, {"transform": "scale(1)", yoyo: false, delay: 0.3, repeat: 0, ease: Power2.easeIn});
         var twesls3_ = TweenMax.to($('.ov2sst4'), 0.7, {"transform": "scale(1)", yoyo: false, delay: 0.5, repeat: 0, ease: Power2.easeIn});
@@ -1584,9 +1819,58 @@ $('#menu_item_6').click(function () {
         });
         nav_menu(6);
     }
-})
+    if(indexSlide === 'sec2'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.race.racein.parallax26.gotoAndPlay('road_hide');
+        $('#sec2').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                canvasTimeline.race.visible = false;
+                $('#section2').removeClass('active');
+                $('#section6').addClass('active');
+                direction = 'down';
+                nextSlide = 'sec6';
+                sec6_inn.go();
+                nav_menu(6);
+            }});
+    }
+    if(indexSlide === 'sec3'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.race.racein.parallax26.gotoAndPlay('road_hide');
+        $('#sec3').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                canvasTimeline.race.visible = false;
+                $('#section3').removeClass('active');
+                $('#section6').addClass('active');
+                direction = 'down';
+                nextSlide = 'sec6';
+                sec6_inn.go();
+                nav_menu(6);
+            }});
+    }
+    if(indexSlide === 'sec4'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.kishpage.gotoAndPlay('pack_out');
+        $('#sec4').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                canvasTimeline.race.visible = false;
+                $('#section4').removeClass('active');
+                $('#section6').addClass('active');
+                direction = 'down';
+                nextSlide = 'sec6';
+                sec6_inn.go();
+                nav_menu(6);
+            }});
+    }
+});
 
 $('#menu_item_5').click(function () {
+    $('#scroll_down').addClass('hide');
     if(indexSlide === 'sec1'){
         direction = 'click';
         prevSlide = 'n';
@@ -1597,10 +1881,82 @@ $('#menu_item_5').click(function () {
         sec5_inn.go();
         nav_menu(5);
     }
-})
+    if(indexSlide === 'sec2'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.race.racein.parallax26.gotoAndPlay('road_hide');
+        $('#sec2').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                canvasTimeline.race.visible = false;
+                $('#section2').removeClass('active');
+                $('#section5').addClass('active');
+                sec5_inn.go();
+                nav_menu(5);
+            }});
+    }
+    if(indexSlide === 'sec3'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.race.racein.parallax26.gotoAndPlay('road_hide');
+        $('#sec3').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                canvasTimeline.race.visible = false;
+                $('#section3').removeClass('active');
+                $('#section5').addClass('active');
+                sec5_inn.go();
+                nav_menu(5);
+            }});
+    }
+    if(indexSlide === 'sec4'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.kishpage.gotoAndPlay('pack_out');
+        $('#sec4').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                $('#section4').removeClass('active');
+                $('#section5').addClass('active');
+                sec5_inn.go();
+                nav_menu(5);
+            }
+        });
+
+    }
+    if(indexSlide === 'sec6'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.sec6.gotoAndPlay('good_out');
+        $('#sec6').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                $('#section6').removeClass('active');
+                $('#section5').addClass('active');
+                sec5_inn.go();
+                nav_menu(5);
+            }
+        });
+    }
+    if(indexSlide === 'sec7'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.sec7.gotoAndPlay('sec7_out');
+        $('#sec7').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                $('#section7').removeClass('active');
+                $('#section5').addClass('active');
+                sec5_inn.go();
+                nav_menu(5);
+            }
+        });
+    }
+});
 
 
 $('#menu_item_4').click(function () {
+    $('#scroll_down').addClass('hide');
     if(indexSlide === 'sec1'){
         direction = 'click';
         prevSlide = 'n';
@@ -1616,9 +1972,78 @@ $('#menu_item_4').click(function () {
         Trigger_Anim = true;
         nav_menu(4);
     }
-})
+    if(indexSlide === 'sec2'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.race.racein.parallax26.gotoAndPlay('road_hide');
+        $('#sec2').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                $('#section2').removeClass('active');
+                $('#section4').addClass('active');
+                sec4_inn.go();
+                console.log('sec4_inn-end');
+                indexSlide = 'sec4';
+                nextSlide = 'sec4-r1';
+                prevSlide = 'sec3';
+                Trigger_Anim = true;
+                nav_menu(4);
+            }});
+    }
+    if(indexSlide === 'sec3'){
+        direction = 'down';
+        sec3_to_sec4.go();
+    }
+    if(indexSlide === 'sec5'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.linesec5.gotoAndPlay('linesec5_out');
+        $('#sec5').velocity({opacity: 0}, {
+            duration: 500, easing: 'easeIn', complete: function () {
+                $('#section5').removeClass('active');
+                $('#section4').addClass('active');
+                canvasTimeline.race.visible = false;
+                nextSlide = 'sec4'
+                sec4_inn.go();
+                nav_menu(4);
+            }
+        });
+    }
+    if(indexSlide === 'sec6'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.sec6.gotoAndPlay('good_out');
+        $('#sec6').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                $('#section6').removeClass('active');
+                $('#section4').addClass('active');
+                nextSlide = 'sec4'
+                sec4_inn.go();
+                nav_menu(4);
+            }
+        });
+    }
+    if(indexSlide === 'sec7'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.sec7.gotoAndPlay('sec7_out');
+        $('#sec7').velocity({opacity: 0}, {
+            duration: 1000, easing: 'easeIn', complete: function () {
+                $('#section7').removeClass('active');
+                $('#section4').addClass('active');
+                nextSlide = 'sec4'
+                sec4_inn.go();
+                nav_menu(4);
+            }
+        });
+    }
+});
 
 $('#menu_item_3').click(function () {
+    $('#scroll_down').addClass('hide');
     if(indexSlide === 'sec1'){
         direction = 'click';
         prevSlide = 'n';
@@ -1630,10 +2055,66 @@ $('#menu_item_3').click(function () {
         sec3_inn.go();
         nav_menu(3);
     }
-})
+    if(indexSlide === 'sec2'){
+        sec2_to_sec3.go();
+    }
+    if(indexSlide === 'sec4'){
+        direction = 'up';
+        sec4_to_sec3.go();
+    }
+    if(indexSlide === 'sec5'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.linesec5.gotoAndPlay('linesec5_out');
+        $('#sec5').velocity({opacity: 0}, {
+            duration: 500, easing: 'easeIn', complete: function () {
+                $('#section5').removeClass('active');
+                $('#section3').addClass('active');
+                canvasTimeline.race.gotoAndStop(20);
+                sec3_inn.go();
+                nav_menu(3);
+            }
+        });
+    }
+    if(indexSlide === 'sec6'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.sec6.gotoAndPlay('good_out');
+        $('#sec6').velocity({opacity: 0}, {
+            duration: 500, easing: 'easeIn', complete: function () {
+                $('#section6').removeClass('active');
+                $('#section3').addClass('active');
+                canvasTimeline.race.gotoAndStop(20);
+                sec3_inn.go();
+                nav_menu(3);
+            }
+        });
+    }
+
+    if(indexSlide === 'sec7'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.sec7.gotoAndPlay('sec7_out');
+        $('#sec7').velocity({opacity: 0}, {
+            duration: 500, easing: 'easeIn', complete: function () {
+                $('#section7').removeClass('active');
+                $('#section3').addClass('active');
+                $('#section6').removeClass('active');
+                $('#section3').addClass('active');
+                canvasTimeline.race.gotoAndStop(20);
+                sec3_inn.go();
+                nav_menu(3);
+            }
+        });
+    }
+});
 
 
 $('#menu_item_2').click(function () {
+    $('#scroll_down').addClass('hide');
     if(indexSlide === 'sec1'){
         direction = 'click';
         prevSlide = 'n';
@@ -1649,12 +2130,96 @@ $('#menu_item_2').click(function () {
         Trigger_Anim = true;
         nav_menu(2);
     }
-})
+    if(indexSlide === 'sec3'){
+        sec3_to_sec2.go();
+    }
+    if(indexSlide === 'sec4'){
+        // $('#sec4').velocity({opacity: 0}, { duration: 1000, easing: 'easeInSine'});
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.kishpage.gotoAndPlay('pack_out');
+        $('#sec4').velocity({opacity: 0}, {
+        duration: 1000, easing: 'easeIn', complete: function () {
+                $('#section4').removeClass('active');
+                $('#section2').addClass('active');
+                sec2_inn.go();
+
+                console.log('sec2_inn-end');
+                indexSlide = 'sec2';
+                nextSlide = 'sec3';
+                prevSlide = 'sec1_trans';
+                Trigger_Anim = true;
+                nav_menu(2);
+            }
+        });
+    }
+    if(indexSlide === 'sec5'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.linesec5.gotoAndPlay('linesec5_out');
+        $('#sec5').velocity({opacity: 0}, {
+            duration: 500, easing: 'easeIn', complete: function () {
+                $('#section5').removeClass('active');
+                $('#section2').addClass('active');
+                sec2_inn.go();
+                console.log('sec2_inn-end');
+                indexSlide = 'sec2';
+                nextSlide = 'sec3';
+                prevSlide = 'sec1_trans';
+                Trigger_Anim = true;
+                nav_menu(2);
+            }
+        });
+    }
+    if(indexSlide === 'sec6'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.sec6.gotoAndPlay('good_out');
+        $('#sec6').velocity({opacity: 0}, {
+            duration: 500, easing: 'easeIn', complete: function () {
+                $('#section6').removeClass('active');
+                $('#section2').addClass('active');
+
+                sec2_inn.go();
+                console.log('sec2_inn-end');
+                indexSlide = 'sec2';
+                nextSlide = 'sec3';
+                prevSlide = 'sec1_trans';
+                Trigger_Anim = true;
+                nav_menu(2);
+            }
+        });
+    }
+    if(indexSlide === 'sec7'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        canvasTimeline.sec7.gotoAndPlay('sec7_out');
+        $('#sec7').velocity({opacity: 0}, {
+            duration: 500, easing: 'easeIn', complete: function () {
+                $('#section7').removeClass('active');
+                $('#section2').addClass('active');
+
+                sec2_inn.go();
+                console.log('sec2_inn-end');
+                indexSlide = 'sec2';
+                nextSlide = 'sec3';
+                prevSlide = 'sec1_trans';
+                Trigger_Anim = true;
+                nav_menu(2);
+            }
+        });
+    }
+});
 
 
 
 $('#nav_item3 a').click(function (event) {
     event.preventDefault();
+    $('#scroll_down').addClass('hide');
     if(indexSlide === 'sec1'){
         $('#section1').removeClass('active');
         $('#section7').addClass('active');
@@ -1742,6 +2307,106 @@ $('#nav_item3 a').click(function (event) {
         sec7_inn.go();
         nav_menu(7);
     }
+})
+$('#menu_item_7').click(function (event) {
+    event.preventDefault();
+    $('#scroll_down').addClass('hide');
+    if(indexSlide === 'sec1'){
+        $('#section1').removeClass('active');
+        $('#section7').addClass('active');
+        canvasTimeline.plafirst.gotoAndStop('NL');
+        sec7_inn.go();
+        nav_menu(7);
+    }
+    if(indexSlide === 'sec1_trans'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        $('#section1').removeClass('active');
+        $('#section7').addClass('active');
+        canvasTimeline.plafirst.gotoAndPlay('first_all_out');
+        sec7_inn.go();
+        nav_menu(7);
+    }
+    if(indexSlide === 'sec2'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        $('#section2').removeClass('active');
+        $('#section7').addClass('active');
+        canvasTimeline.race.racein.parallax26.gotoAndPlay('road_hide');
+        sec7_inn.go();
+        nav_menu(7);
+    }
+    if(indexSlide === 'sec3'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        $('#section3').removeClass('active');
+        $('#section7').addClass('active');
+        canvasTimeline.race.racein.parallax26.gotoAndPlay('road_hide');
+        sec7_inn.go();
+        nav_menu(7);
+    }
+    if(indexSlide === 'sec4'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        $('#section4').removeClass('active');
+        $('#section7').addClass('active');
+        canvasTimeline.kishpage.gotoAndPlay('pack_out');
+        sec7_inn.go();
+        nav_menu(7);
+    }
+    if(indexSlide === 'sec4-r1'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        $('#section4').removeClass('active');
+        $('#section7').addClass('active');
+        canvasTimeline.race2.racein2.parallax26.gotoAndPlay('road2_hide');
+        sec7_inn.go();
+        nav_menu(7);
+    }
+    if(indexSlide === 'sec5'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        $('#section5').removeClass('active');
+        $('#section7').addClass('active');
+        canvasTimeline.linesec5.gotoAndPlay('linesec5_out');
+        sec7_inn.go();
+        nav_menu(7);
+    }
+    if(indexSlide === 'sec5-r1'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        $('#section5').removeClass('active');
+        $('#section7').addClass('active');
+        canvasTimeline.linesec5.gotoAndPlay('linesec5_all_out');
+        sec7_inn.go();
+        nav_menu(7);
+    }
+    if(indexSlide === 'sec6'){
+        direction = 'click';
+        prevSlide = 'n';
+        nextSlide = 'n';
+        $('#section6').removeClass('active');
+        $('#section7').addClass('active');
+        canvasTimeline.sec6.gotoAndPlay('good_out');
+        sec7_inn.go();
+        nav_menu(7);
+    }
+})
+$('.fbutt').click(function (event) {
+    event.preventDefault();
+    $('#scroll_down').addClass('hide');
+        $('#section1').removeClass('active');
+    $('#section7').addClass('active');
+    canvasTimeline.plafirst.gotoAndStop('NL');
+    sec7_inn.go();
+    nav_menu(7);
 })
 
 
