@@ -283,7 +283,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);    overflow: hidden;
+  transform: translate(-50%, -50%);    overflow: visible;
   transition: all 0.3s ease-in-out;}
 #button_share_svg{ width: 100%;height: 100%;}
 #button_share_inn:hover{width: 40px;height: 40px;}
@@ -301,8 +301,7 @@ body {
   transform: translate(-50%, 0%);
 }
 #scroll_down_inn{
-  //bottom: -120%;
-  opacity: 0;
+   opacity: 0;
   position: relative;}
 #scroll_down.hide{display: none;}
 #sc_circle{    border: 0.05rem dotted #ffffff;
@@ -616,6 +615,10 @@ h1 {
   top: 0;
   left: 0;
   z-index: 0;
+}
+#triger_anim{
+  width: 0;
+  height: 0;
 }
 
 @import 'common/_preloader';

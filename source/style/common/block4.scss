@@ -1,4 +1,10 @@
 /* block 4 */
+#sec4{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
 
 #sec4_half{height: 100%;
   width: 100%;
@@ -18,6 +24,24 @@
   -webkit-transition: background 2.5s ease;
   transition: background 2.5s ease;
   width: 430px;position: absolute;
+  display: block;
+  top: 0px;    left: 14%;
+  color: #fff;}
+
+#ftext_04{opacity: 0; margin-top: 50px;    position: absolute;         top: 13%;
+  width: 100%;
+  text-align: center;}
+
+#ftext_04 h1{text-transform: uppercase;
+  background: -webkit-linear-gradient(left, #3ee6a4, #3edece 33.3%, #ffffff 66.6%, #ffffff);
+  background-size: 300% 100%;
+  background-position: left 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  -webkit-transition: background 2.5s ease;
+  transition: background 2.5s ease;
+
   display: block;
   top: 0px;    left: 14%;
   color: #fff;}
