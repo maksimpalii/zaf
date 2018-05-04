@@ -633,7 +633,7 @@ var sec4_hf2_to_sec4_hf1 = (function () {
                         var dir033 = TweenMax.to($('#dir3_small'), .75, {"transform": "scale(1)", yoyo: false, delay: 0.4, repeat: 0, ease: Power2.easeIn});
 
                         var twesl2 = TweenMax.to($('#lefthand3'), 1, {"transform": "rotateZ(19deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
-                        var twes22 = TweenMax.to($('#righthand3'), 1, {"transform": "rotateZ(15deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
+                        var twes22 = TweenMax.to($('#righthand3'), 1, {"transform": "rotateZ(14deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
                         var twes32 = TweenMax.to($('#head3'), 1, {"transform": "rotateZ(9deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
                         var twes42 = TweenMax.to($('#shvabra'), 1, {"transform": "translateX(-17px)", yoyo: true, repeat: -1, ease: Linear.easeNone});
                         var twes52 = TweenMax.to($('#shv_inn'), 1, {"transform": "rotateZ(2deg)", yoyo: true, repeat: -1, ease: Linear.easeNone});
@@ -1432,7 +1432,7 @@ var sec1_inn = (function () {
             $('#btn_text p').velocity({opacity: 1, marginTop: 0}, {delay: 500, duration: 1000, easing: 'easeIn'});
             $('#header_logo').velocity({opacity: 1, marginTop: 0}, {delay: 600, duration: 1000, easing: 'easeIn'});
             $('#btn_str').velocity({opacity: 1, right: '20%'}, {delay: 900, duration: 1000, easing: 'easeIn'});
-            $('#header_slogan').velocity({opacity: 1, marginLeft: 0}, {delay: 1200, duration: 1000, easing: 'easeIn'});
+            $('#header_slogan').velocity({opacity: 1, marginLeft: -7}, {delay: 1200, duration: 1000, easing: 'easeIn'});
             $('#nav_item1').velocity({opacity: 1, marginTop: 0}, {delay: 1400, duration: 500, easing: 'easeIn'});
             $('#nav_item2').velocity({opacity: 1, marginTop: 0}, {delay: 1600, duration: 500, easing: 'easeIn'});
             $('#nav_item3').velocity({opacity: 1, marginTop: 0}, {delay: 1800, duration: 500, easing: 'easeIn'});
@@ -1841,7 +1841,7 @@ window.document.onkeydown = function (e) {
 var change_Triger = function () {
     if(!Trigger_Anim){
         $('#triger_anim').velocity({opacity: 1}, {
-            duration: 1000, easing: 'easeIn', complete: function () {
+            duration: 2500, easing: 'easeIn', complete: function () {
                 Trigger_Anim = true;
             }});
     }

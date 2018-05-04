@@ -13,7 +13,8 @@
   filter: FlipH;
   -ms-filter: "FlipH";}
 #dira2{width:254px;height:240px;position:absolute;}
-#man2{width:180px;height:120px;position:absolute;top:80px;left:40px;transform:scale(0);}
+#man2{width:243px;height:145px;position:absolute;top:80px;left:20px;transform:scale(0);}
+#man3 svg{transform:translate3d(0px, 0px, 0px);}
 
 #ftext_3 h1{text-transform: uppercase;
   background: -webkit-linear-gradient(left, #e43e43, #fb8d3a 33.3%, #ffffff 66.6%, #ffffff);
@@ -44,6 +45,9 @@
   left: -30%;
   z-index: -1;
   text-align: right;
+}
+#icons_21 svg{
+  overflow: visible;
 }
 #icon_21_txt_inn{opacity: 0;}
 .icon_4_1_st_0{fill:#FFFFFF;}
@@ -173,8 +177,8 @@
 
 .icon_4_3_st0{}
 .icon_4_3_st1{fill:#FFFFFF;}
-.icon_4_3_st2{fill:none;stroke:url(#SVGID_12_);stroke-width:1.2053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-.icon_4_3_st3, .icon_4_3_st4, .icon_4_3_st5, .icon_4_3_st6, .icon_4_3_st7{fill:none;stroke:url(#SVGID_12_);stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.icon_4_3_st2{fill:none;stroke:url(#SVGID_12_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.icon_4_3_st3, .icon_4_3_st4, .icon_4_3_st5, .icon_4_3_st6, .icon_4_3_st7{fill:none;stroke:url(#SVGID_12_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .icon_4_3_st8, .icon_4_3_st9{opacity:0.3;fill:url(#SVGID_12_);}
 
 #triang_43{
@@ -248,7 +252,7 @@
 #icon_24_txt_inn{opacity: 0;}
 .icon_4_4_st0{fill:#ffffff;}
 .icon_4_4_st2{opacity:0.3;fill:url(#SVGID_13_);}
-.st1{fill:none;stroke:url(#SVGID_13_);stroke-width:1.9019;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st1{fill:none;stroke:url(#SVGID_13_);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .icon_4_4_st3, .icon_4_4_st4{fill:none;stroke:url(#SVGID_13_);stroke-width:1.9019;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 
 #triang_44{
@@ -360,6 +364,7 @@
   animation-fill-mode: forwards;}
 
 #ic_41_5.active #icon_4_5 .ic_4_5_inn_op{opacity: 0.3;}
+#ic_41_5 svg{overflow: visible;}
 /* icon 4_5  end*/
 
 

@@ -101,7 +101,7 @@ body {
 #header_slogan {
   color: #20a91b;
   font-size: 22px;
-  line-height: 18px;
+  line-height: 24px;
   margin-left: -50px;
   opacity: 0;
 }
@@ -285,7 +285,7 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);    overflow: visible;
   transition: all 0.3s ease-in-out;}
-#button_share_svg{ width: 100%;height: 100%;}
+#button_share_svg{ width: 100%;height: 100%;    overflow: visible;}
 #button_share_inn:hover{width: 40px;height: 40px;}
 #scroll_down {
   cursor: pointer;
