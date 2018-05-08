@@ -96,6 +96,7 @@ body {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  text-decoration: none;
 }
 
 #header_slogan {
@@ -144,10 +145,10 @@ body {
 #leftMenu {
   position: fixed;
   width: 140px;
-  left: 0%;
+  left: 1.5%;
   height: 100%;
   font-family: 'PT Sans', sans-serif;
-  font-size: 14px;    z-index: 20;
+  font-size: 16px;    z-index: 20;
 }
 
 #line_menu_items {

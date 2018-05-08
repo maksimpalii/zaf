@@ -2,7 +2,7 @@
   position: absolute;
   width: 28%;
   height: 50%;
-  left: 10%;
+  left: 13%;
   bottom: 10%;
   z-index: 10;
 }
@@ -57,6 +57,7 @@
 #ftext_5 h1{text-transform: uppercase;    color: #3eddd6;
 }
 #sec5_txt #ftext_op{color: #ffffff;opacity: 0;}
+#sec5_txt #ftext_op p{font-size: 18px;}
 #button5{    position: absolute;
   width: 310px;
   height: 65px;
@@ -131,9 +132,9 @@
 #spis_1_h{ cursor: pointer; }
 #spis_2_h{ cursor: pointer; }
 #spis_3_h{ cursor: pointer; }
-#spis_1_tx{  color: #ffffff; display: none;position: absolute; margin-top: 20px;}
-#spis_2_tx{  color: #ffffff;display: none;position: absolute; margin-top: 20px;}
-#spis_3_tx{ color: #ffffff;display: none;position: absolute; margin-top: 20px;}
+#spis_1_tx{  color: #ffffff; display: none;position: absolute; margin-top: 20px;font-size: 18px;}
+#spis_2_tx{  color: #ffffff;display: none;position: absolute; margin-top: 20px;font-size: 18px;}
+#spis_3_tx{ color: #ffffff;display: none;position: absolute; margin-top: 20px;font-size: 18px;}
 
 #pharm_union_dop{  width: 100px;
   position: absolute;
