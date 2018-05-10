@@ -69,6 +69,7 @@
   outline: none;}
 #button5 #btn_text{
   color: #ffffff;}
+
 #button5:hover #btn_contur {
   bottom: 0%;
 }
@@ -121,17 +122,20 @@
   transform: translateY(-50%);
   position: absolute;
 }
-#spis_1{  display: flex;    align-items: center;}
+#spis_1{  display: flex;    align-items: center; }
 #spis_2{ display: flex;    align-items: center;padding: 40px 0;}
 #spis_3{ display: flex;    align-items: center;}
 .goodsm{    width: 100px;    transform: matrix(1, 0, 0, 1, 0, 0);}
 .close{width: 35px;    position: absolute; cursor: pointer;
   top: -105px;
   right: -20px;}
-#spis_1_h_inn, #spis_2_h_inn, #spis_3_h_inn{color:#ffffff;    font-family: 'PT Sans', sans-serif;font-size: 24px;text-transform: uppercase;}
+#spis_1_h_inn, #spis_2_h_inn, #spis_3_h_inn{color:#ffffff;    font-family: 'PT Sans', sans-serif;font-size: 24px;text-transform: uppercase;transition: all 0.3s ease-in-out;}
 #spis_1_h{ cursor: pointer; }
 #spis_2_h{ cursor: pointer; }
 #spis_3_h{ cursor: pointer; }
+#spis_1_h:hover #spis_1_h_inn{    color: #4fe1d2;}
+#spis_2_h:hover #spis_2_h_inn{    color: #4fe1d2;}
+#spis_3_h:hover #spis_3_h_inn{    color: #4fe1d2;}
 #spis_1_tx{  color: #ffffff; display: none;position: absolute; margin-top: 20px;font-size: 18px;}
 #spis_2_tx{  color: #ffffff;display: none;position: absolute; margin-top: 20px;font-size: 18px;}
 #spis_3_tx{ color: #ffffff;display: none;position: absolute; margin-top: 20px;font-size: 18px;}

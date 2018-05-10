@@ -129,6 +129,11 @@ var indicator = new WheelIndicator({
 });
 
 
+$("#button_share").on("click",function(){
+    var fbpopup = window.open("https://www.facebook.com/sharer/sharer.php?u=http://zafakol.thehost.top", "pop", "width=600, height=400, scrollbars=no");
+    return false;
+});
+
 var sec7_inn = (function () {
     return {
         inn: function (raceCall) {

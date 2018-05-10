@@ -9,7 +9,70 @@
 
 .content-map {
   position: absolute;
-  width: 70%;
+  width: 970px;
   height: 65%;
   @include centered();
+}
+
+.footer {
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  position: absolute;
+}
+
+.footer_inn {
+  position: absolute;
+  width: 75%;
+  @include centered();
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_inn a {
+  font-style: normal;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  color: #406481;
+}
+
+#button6 {
+  position: absolute;
+  width: 250px;
+  height: 65px;
+  bottom: 30%;
+  left: 80px;
+  opacity: 1;
+  border-radius: 35px;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  @include notebook() {
+    bottom: 5%;
+  }
+}
+
+#button6 #fbutt_cont {
+  width: 250px;
+  border: none;
+  background-image: url("/assets/img/bt_gr.jpg");
+  background-position: 0px 0px;
+}
+
+#button6 #btn_text {
+  color: #ffffff;
+  z-index: 10;
+  width: 70%;
+  left: 45%;
+  text-align: center;
+}
+
+#button6 #btn_text p {
+  margin-top: -5px!important;
+}
+
+#button6 #btn_str {
+  z-index: 10;
+  opacity: 1;
+  right: 15%;
 }

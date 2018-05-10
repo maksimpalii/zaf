@@ -801,11 +801,12 @@ p.nominalBounds = new cjs.Rectangle(-1160.1,-1220.2,2325.9,1714.4);
 
 	// Слой 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#4FE1D2").s().p("EiSZDcAQoygipcifQokiRoVjrMAAAjWUIABAAMAAfipIIgFj2QgDj5AIgSQB6kHI+lOQC0hpEjiVQFMipA/gjQHwkRHLh/QICiNICAbQHHAYJLBqQCEAXOBC3QJwCAGZAyQI5BFHlgcQKJgmGogvQH3g4GahbQG1hhGsidQGwigHxj5QIHkEJSgPQH3gNJhCnQGsB1KcEMIIaDaQE2B8DbBNQInDCGRAJQFmAIE5iNQDmhnFakEIE2jrQDCiSCghrQOHpdUlBPQIyAiJcCfQIkCRIVDrMAAADPxIAAE6IAAAaIAABPIgBAAMgAfCpIIAFD2QADD5gIASQh6EHo+FOQi0BpkjCVQlMCpg/AjQnwERnLB/QoCCNoCgbQnHgYpLhqQiEgXuBi3QpwiAmZgyQo5hFnlAcQqJAmmoAvQn3A4maBbQm1BhmsCdQmwCgnxD5QoHEEpSAPQn3ANphinQmsh1qckMIoajaQk2h8jbhNQonjCmRgJQlmgIk5CNQjmBnlaEEIk2DrQjCCSigBrQsfIXxiAAQiSAAiZgJg");
+	this.shape.graphics.f("#4FE1D2").s().p("EiSZDSoQoygipcifQokiRoVjrMAAAjWUIABAAMAAficoQFCiHINjJQQamRP6lIQWSnMSEj5QWmk4OtAmQO0AoOYDqQJzCgNGFCQGpCmDIBLQFVCBDtBJQJmC8HXgbQJPgiLviEQLliCLmjFQL/jMJjjrQKOj7F0j5QOHpdUlBPQIzAiJbCfQIkCRIVDrMAAAC9BIAAE7IAAAaIAABPIgBAAMgAfCpHIAFD2QADD5gIASQh6EHo+FOQi0BpkjCVQlMCpg/AjQnwERnLB/QoCCNoCgbQnHgYpLhqQiEgXuBi3QpwiAmZgyQo5hFnlAcQqJAmmoAvQn3A4maBbQm1BhmsCdQmwCgnxD5QoHEEpSAPQn3ANphinQmsh1qckMIoajaQk2h8jbhNQonjCmRgJQlmgIk5CNQjmBnlaEEIk2DrQjCCSigBrQsfIXxiAAQiSAAiZgJg");
+	this.shape.setTransform(0,60);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.gr_sec5, new cjs.Rectangle(-1161.7,-1408.9,2323.5,2817.8), null);
+}).prototype = getMCSymbolPrototype(lib.gr_sec5, new cjs.Rectangle(-1161.7,-1288.9,2323.5,2697.8), null);
 
 
 (lib.fsdfsfsdfsd = function(mode,startPosition,loop) {
@@ -965,11 +966,12 @@ p.nominalBounds = new cjs.Rectangle(-7.8,-27.6,15.7,55.3);
 
 	// Слой 1
 	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#649CC9").s().p("EgeZDWeQnwgsoPi5Qljh9ndkAQoJkkkGiCQm/jhlthYQnKhvnQA7QkkAmoUBrQoyByj9AkQnFBBlrgSQm1gVmGiPQnziKmqnvQlUmLkYpdQjHmwiVntQguiagkiOIgahuMAAAlVdQEKhFFOg5QKbh1FqArQbiDTFLAkQRBB2MFAkQOoAtMOg4QNhg/Mci/QIriGFph1QHgidGHjLQITkUGaigQHii7GwhMQHZhSHUApQHwAsIPC5QFjB9HdEAQIJEkEGCCQG/DhFtBYQHKBvHQg7QEkgmIUhrQIyhyD9gkQHFhBFrASQG1AVGGCPQHzCKGqHvQFUGLEYJdQDHGwCVHtQAuCaAkCOIAaBuMAAAFVdQkKBElOA6QqbB1lqgrQ7ijTlLgkQxBh2sFgkQuogtsOA4QthA/scC/QorCGlpB1QngCdmHDLQoTEUmaCgQniC7mwBMQk6A2k4AAQieAAidgNg");
+	this.shape_1.graphics.f("#649CC9").s().p("EgZ2DPXQnvgsoPi5Qlkh9ndkAQoJkkkFiCQm/jglthZQnLhvnPA8QkkAloVBsQoxBxj9AlQnFBAlrgSQm1gVmHiOQnyiLmqnvQlVmLkXpdQjImwiUntQgviagjiNIgbhvMgJYk/lQD6hfGQiMQMekZL3jkUAl7gLaARlAA/QUrBGQhDRQMcCdMCELQDgBNFyCMQFwCLChA4QJCDHHbAuQNHBSKgjIQEahUEuiSQDZhpFNjAQHdkUBgg1QFbi/E3iHQM1lkPYiRQOXiFM+CEQKhBsKiEpQEFBzEpCfQCjBXFSC/QEvCsCaBQQDxB8C8BFQHyCKEtE8QDwD9BoFiQBKD9gBEWQgBBXgIBPIgIA+MAAAFVcQkKBFlPA6QqbB0lpgrQ7jjTlKgjQxCh3sFgkQuogssOA4QtgA+scC/QorCGlqB2QngCcmGDLQoTEVmbCfQnhC8mxBLQk6A3k4AAQieAAidgOg");
+	this.shape_1.setTransform(-29.1,45.5);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape_1).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.bl_sec5, new cjs.Rectangle(-1164.1,-1373.9,2324.3,2885.5), null);
+}).prototype = getMCSymbolPrototype(lib.bl_sec5, new cjs.Rectangle(-1220.1,-1283,2382,2794.5), null);
 
 
 (lib.asasasd = function(mode,startPosition,loop) {
@@ -1567,7 +1569,7 @@ p.nominalBounds = new cjs.Rectangle(-3.8,-1.2,7.7,2.6);
 	this.instance.setTransform(240,2140.7);
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(18).to({_off:false},0).to({y:1660.7},27,cjs.Ease.get(1)).wait(1).to({y:2140.7},27,cjs.Ease.get(-1)).to({_off:true},1).wait(17));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(18).to({_off:false},0).to({y:1460.7},27,cjs.Ease.get(1)).wait(1).to({y:2140.7},27).to({_off:true},1).wait(17));
 
 	// green
 	this.instance_1 = new lib.gr_sec5();
@@ -1575,7 +1577,7 @@ p.nominalBounds = new cjs.Rectangle(-3.8,-1.2,7.7,2.6);
 	this.instance_1.setTransform(164,2104.5);
 	this.instance_1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({y:1624.5},44,cjs.Ease.get(1)).wait(1).to({y:2104.5},44,cjs.Ease.get(-1)).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(1).to({_off:false},0).to({y:1424.5},44,cjs.Ease.get(1)).wait(1).to({y:2104.5},44).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = null;
