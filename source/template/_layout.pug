@@ -31,22 +31,17 @@ html
 
 
 body(class='home')
-    .preloader
-        .preloader__spinner
-            svg.night-animation(width='180', height='180', viewbox='0 0 120 120', preserveaspectratio='xMaxYMax meet')
-                g.group
-                    circle.small.circle(r='35', cx='50%', cy='50%', fill='none', stroke-dasharray='1 220', stroke-linecap='round')
-                    circle.big.circle(r='25', cx='50%', cy='50%', fill='none', stroke-dasharray='0 157')
-                    text.loading-value(x='50%', y='50%', fill='#000') 0%
+    //.preloader
+    //    .preloader__spinner
+    //        svg.night-animation(width='180', height='180', viewbox='0 0 120 120', preserveaspectratio='xMaxYMax meet')
+    //            g.group
+    //                circle.small.circle(r='35', cx='50%', cy='50%', fill='none', stroke-dasharray='1 220', stroke-linecap='round')
+    //                circle.big.circle(r='25', cx='50%', cy='50%', fill='none', stroke-dasharray='0 157')
+    //                text.loading-value(x='50%', y='50%', fill='#000') 0%
 
     block content
     script(src='/assets/js/createjs-2015.11.26.min.js')
     script(src='/assets/js/race_all_v2.js')
-    //script(src='https://cdn.jsdelivr.net/kute.js/1.5.5/kute.min.js')
-    //script(src='https://cdn.jsdelivr.net/kute.js/1.5.5/kute-svg.min.js')
-    //script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js')
-    //script(src='/assets/js/kute.min.js')
-    //script(src='/assets/js/kute-svg.min.js')
     script(src='/assets/js/TweenMax.min.js')
     script(src='/assets/js/forparallaxanimate.js')
     script(src='/assets/js/jquery.min.js')
@@ -54,5 +49,5 @@ body(class='home')
     script(src='/assets/js/velocity.ui.min.js')
     script(src='/assets/js/wheel-indicator.js')
 
-    //script(src='/assets/js/app.js' defer)
-    script(src='/assets/js/app.js')
+    //script(src='/assets/js/app.js' )
+    script(src='/assets/js/app.js' defer)

@@ -62,7 +62,7 @@ var preloader = (function () {
     }
 }());
 
-preloader.init();
+//preloader.init();
 
 var deltaScreen, direction, indexSlide, nextSlide, prevSlide, pressKey, raceCall, Trigger_Anim = false, Trig_FL = true, menuitem;
 var canvas, stage, exportRoot, fnStartAnimation, canvasTimeline;
@@ -1453,6 +1453,7 @@ var sec1_inn = (function () {
                     $('#menu_item_7 span').addClass('show');
                     $('#scroll_down').addClass('show');
                     $('#line_osnova').velocity({opacity: 1}, {duration: 500, easing: 'easeIn'});
+                    $('#line_menu_1_').velocity({opacity: 1}, {delay: 300, duration: 500, easing: 'easeIn'});
                 }
             });
             $('#menu_item_6').velocity({opacity: 1}, {delay: 3200, duration: 200, easing: 'easeIn'});
@@ -1621,6 +1622,7 @@ var nav_menu = function (menuitem) {
         $('#menu_item_2').addClass('active');
         $('#line_menu_items').css('color', '#1ca9a3');
         $('#line_osnova').css('stroke', '#4fe5b8');
+        $('#line_menu_1_').css('stroke', '#4fe5b8');
         $('.line_menu_sv').css('fill', '#4fe5b8');
         $('.circ_sm').css('background', '#4fe5b8');
         $('.circ_bg').css('border-color', '#4fe5b8');
@@ -1639,6 +1641,7 @@ var nav_menu = function (menuitem) {
         $('#menu_item_3').addClass('active');
         $('#line_menu_items').css('color', '#1ca9a3');
         $('#line_osnova').css('stroke', '#4fe5b8');
+        $('#line_menu_1_').css('stroke', '#4fe5b8');
         $('.line_menu_sv').css('fill', '#4fe5b8');
         $('.circ_sm').css('background', '#4fe5b8');
         $('.circ_bg').css('border-color', '#4fe5b8');
@@ -1657,6 +1660,7 @@ var nav_menu = function (menuitem) {
         $('#menu_item_4').addClass('active');
         $('#line_menu_items').css('color', '#ffffff');
         $('#line_osnova').css('stroke', '#ffffff');
+        $('#line_menu_1_').css('stroke', '#ffffff');
         $('.line_menu_sv').css('fill', '#ffffff');
         $('.circ_sm').css('background', '#ffffff');
         $('.circ_bg').css('border-color', '#ffffff');
@@ -1675,6 +1679,7 @@ var nav_menu = function (menuitem) {
         $('#menu_item_4').addClass('active');
         $('#line_menu_items').css('color', '#1ca9a3');
         $('#line_osnova').css('stroke', '#4fe5b8');
+        $('#line_menu_1_').css('stroke', '#4fe5b8');
         $('.line_menu_sv').css('fill', '#4fe5b8');
         $('.circ_sm').css('background', '#4fe5b8');
         $('.circ_bg').css('border-color', '#4fe5b8');
@@ -1693,6 +1698,7 @@ var nav_menu = function (menuitem) {
         $('#menu_item_5').addClass('active');
         $('#line_menu_items').css('color', '#ffffff');
         $('#line_osnova').css('stroke', '#ffffff');
+        $('#line_menu_1_').css('stroke', '#ffffff');
         $('.line_menu_sv').css('fill', '#ffffff');
         $('.circ_sm').css('background', '#ffffff');
         $('.circ_bg').css('border-color', '#ffffff');
@@ -1711,6 +1717,7 @@ var nav_menu = function (menuitem) {
         $('#menu_item_6').addClass('active');
         $('#line_menu_items').css('color', '#ffffff');
         $('#line_osnova').css('stroke', '#ffffff');
+        $('#line_menu_1_').css('stroke', '#ffffff');
         $('.line_menu_sv').css('fill', '#ffffff');
         $('.circ_sm').css('background', '#ffffff');
         $('.circ_bg').css('border-color', '#ffffff');
@@ -1729,6 +1736,7 @@ var nav_menu = function (menuitem) {
         $('#menu_item_7').addClass('active');
         $('#line_menu_items').css('color', '#1ca9a3');
         $('#line_osnova').css('stroke', '#4fe5b8');
+        $('#line_menu_1_').css('stroke', '#4fe5b8');
         $('.line_menu_sv').css('fill', '#4fe5b8');
         $('.circ_sm').css('background', '#4fe5b8');
         $('.circ_bg').css('border-color', '#4fe5b8');
